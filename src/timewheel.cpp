@@ -1,0 +1,86 @@
+#include "../include/timewheel.h"
+#include "../include/eventloop.h"
+
+void TimeWheel::RemoveWeakTaskHelper(size_t id)
+{
+    auto it = _timers.find(id);
+    if(it == _timers.end())
+        return;
+    _timers.erase(it);
+}
+
+bool TimeWheel::IsTimeTaskExists(size_t id)
+{
+    auto it = _timers.find(id);
+    if(it == _timers.end())
+        return false;
+    return true;
+}
+
+bool TimeWheel::AddTimeTaskInLoop(size_t id,size_t timeout,TimeOutCallBack cb)
+{
+    if(timeout > _capacity)
+        return false;
+    SharedTimeTask stt = std::make_shared<TimeTask>(id,timeout,cb,std::bind(RemoveWeakTask,this,id));
+    _timewheel[(_tick + timeout) % _capacity].push(stt);
+    WeakTimeTask wtt = stt;
+    _timers[id] = wtt;
+    return true;
+}
+
+void TimeWheel::RefreshTimeTaskInLoop(size_t id)
+{
+    auto it = _timers.find(id);
+    if(it == _timers.end())
+        return;
+    SharedTimeTask ptr = (*it).second.lock();
+    _timewheel[(ptr->delay_time() + _tick) % _capacity].push(ptr);
+}
+void TimeWheel::RunOneTime()
+{
+    _tick = (_tick + 1)%_capacity;
+    auto& q = _timewheel[_tick];
+    while(!q.empty())
+    {
+        auto task = std::move(q.front());
+        q.pop();
+    }
+}
+
+void TimeWheel::EnableTimeTaskInLoop(size_t id)
+{
+    auto it = _timers.find(id);
+    if(it == _timers.end())
+        return;
+    SharedTimeTask ptr = (*it).second.lock();
+    ptr->Enable();
+}
+
+void TimeWheel::UnableTimeTaskInLoop(size_t id)
+{
+    auto it = _timers.find(id);
+    if(it == _timers.end())
+        return;
+    SharedTimeTask ptr = (*it).second.lock();
+    ptr->Unable();
+}
+
+void TimeWheel::EnableTimeTask(size_t id)
+{
+    _loop->RunInLoop(std::bind(&TimeWheel::EnableTimeTask,this,id));
+}
+
+void TimeWheel::UnableTimeTask(size_t id)
+{
+    _loop->RunInLoop(std::bind(&TimeWheel::UnableTimeTask,this,id));
+}
+
+void TimeWheel::AddTimeTask(size_t id,size_t timeout,TimeOutCallBack cb)
+{
+    _loop->RunInLoop(std::bind(&TimeWheel::AddTimeTaskInLoop,this,id,timeout,cb));
+}
+
+void TimeWheel::RefreshTimeTask(size_t id)
+{
+    _loop->RunInLoop(std::bind(&TimeWheel::RefreshTimeTask,this,id));
+}
