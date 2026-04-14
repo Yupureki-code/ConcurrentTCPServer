@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/test.dir/output/lib/test.o -o test   -L/home/yupureki/project/ConcurrentTCPServer/CTS/output/lib  -Wl,-rpath,/home/yupureki/project/ConcurrentTCPServer/CTS/output/lib /home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.so.1.0.0 -lpthread 

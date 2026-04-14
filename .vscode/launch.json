@@ -1,42 +1,44 @@
 {
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C++ Debug (GDB)",
+            "name": "(gdb) 启动",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "program": "${workspaceFolder}/CTS/output/lib/test",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${fileDirname}",
+            "environment": [],
             "externalConsole": false,
+            "justMyCode": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "/usr/bin/gdb",
-            "preLaunchTask": "C/C++: g++ build active file",
             "setupCommands": [
                 {
                     "description": "为 gdb 启用整齐打印",
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
                 },
-                // 👇 在这里添加 GDB skip 命令
                 {
-                    "description": "跳过标准库头文件",
-                    "text": "-interpreter-exec console \"skip -gfi /usr/include/c++/**/*.h\"",
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
                     "ignoreFailures": true
                 },
                 {
-                    "description": "跳过 std 命名空间下的函数",
-                    "text": "-interpreter-exec console \"skip -rfu std::.*\"",
+                    "description": "跳过标准库和STL文件",
+                    "text": "skip -gdb source /usr/include/c++/*",
                     "ignoreFailures": true
                 },
-                // 可选：跳过特定的 STL 容器，例如 std::string
                 {
-                    "description": "跳过 std::string 相关函数",
-                    "text": "-interpreter-exec console \"skip -rfu std::basic_string.*\"",
+                    "description": "跳过STL调试",
+                    "text": "skip -gdb source /usr/include/c++/bits/*",
                     "ignoreFailures": true
                 }
             ]
         }
+
     ]
 }

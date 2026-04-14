@@ -1,0 +1,889 @@
+[server] port=19110 workers=4 idle_timeout_sec=2
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][10] - Poll created: epfd=3
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp][13] - EventLoop event_fd=4
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp][16] - EventLoop::EventLoop() poll epfd=3
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=4 events=1 oper=1 epfd=3
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp][18] - EventLoop::EventLoop() done
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][64] - sockect create success : 5
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][75] - bind success
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][85] - listen success
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=5 events=1 oper=1 epfd=3
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][10] - Poll created: epfd=6
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp][13] - EventLoop event_fd=7
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp][16] - EventLoop::EventLoop() poll epfd=6
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=7 events=1 oper=1 epfd=6
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp][18] - EventLoop::EventLoop() done
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][10] - Poll created: epfd=8
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp][13] - EventLoop event_fd=9
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp][16] - EventLoop::EventLoop() poll epfd=8
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=9 events=1 oper=1 epfd=8
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp][18] - EventLoop::EventLoop() done
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][10] - Poll created: epfd=10
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp][13] - EventLoop event_fd=11
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp][16] - EventLoop::EventLoop() poll epfd=10
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=11 events=1 oper=1 epfd=10
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp][18] - EventLoop::EventLoop() done
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][10] - Poll created: epfd=12
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp][13] - EventLoop event_fd=13
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp][16] - EventLoop::EventLoop() poll epfd=12
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=13 events=1 oper=1 epfd=12
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:29:56][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp][18] - EventLoop::EventLoop() done
+[2026-04-14 13:29:56][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:29:56][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:0
+[2026-04-14 13:29:56][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[stats] connected=0 closed=0 unique_callback_threads=0
+[2026-04-14 13:29:57][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:29:57][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:29:57][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:0
+[2026-04-14 13:29:57][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[stats] connected=0 closed=0 unique_callback_threads=0
+[2026-04-14 13:29:58][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:29:58][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:29:58][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:0
+[2026-04-14 13:29:58][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[stats] connected=0 closed=0 unique_callback_threads=0
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:50942 accpet success client:127.0.0.1:50942
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:14,peer:127.0.0.1:50942
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:0
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:50946 accpet success client:127.0.0.1:50946
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:15,peer:127.0.0.1:50946
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:0
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:50944 accpet success client:127.0.0.1:50944
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:16,peer:127.0.0.1:50944
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:0
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:50978 accpet success client:127.0.0.1:50978
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:17,peer:127.0.0.1:50978
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:0
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:50964 accpet success client:127.0.0.1:50964
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:18,peer:127.0.0.1:50964
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:0
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:50994 accpet success client:127.0.0.1:50994
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:19,peer:127.0.0.1:50994
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:0
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51008 accpet success client:127.0.0.1:51008
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:20,peer:127.0.0.1:51008
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:0
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51012 accpet success client:127.0.0.1:51012
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:21,peer:127.0.0.1:51012
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:0
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51016 accpet success client:127.0.0.1:51016
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:22,peer:127.0.0.1:51016
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:0
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51026 accpet success client:127.0.0.1:51026
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:23,peer:127.0.0.1:51026
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:0
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51036 accpet success client:127.0.0.1:51036
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:24,peer:127.0.0.1:51036
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:0
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=14 events=1 oper=1 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=4 thread=127681777628864 total=1
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=15 events=1 oper=1 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=5 thread=127681777628864 total=2
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=16 events=1 oper=1 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=6 thread=127681777628864 total=3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=17 events=1 oper=1 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=7 thread=127681777628864 total=4
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=18 events=1 oper=1 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=8 thread=127681777628864 total=5
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=19 events=1 oper=1 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=9 thread=127681777628864 total=6
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=20 events=1 oper=1 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=10 thread=127681777628864 total=7
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=21 events=1 oper=1 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=11 thread=127681777628864 total=8
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=22 events=1 oper=1 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=12 thread=127681777628864 total=9
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=23 events=1 oper=1 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=13 thread=127681777628864 total=10
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=24 events=1 oper=1 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=14 thread=127681777628864 total=11
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-1\n, count:9
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-1\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-1\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-1\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=14 events=5 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-2\n, count:9
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-2\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-2\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-2\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=15 events=5 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-0\n, count:9
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-0\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-0\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-0\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51044 accpet success client:127.0.0.1:51044
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:25,peer:127.0.0.1:51044
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:1
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51058 accpet success client:127.0.0.1:51058
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:26,peer:127.0.0.1:51058
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:1
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51074 accpet success client:127.0.0.1:51074
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:27,peer:127.0.0.1:51074
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:1
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51078 accpet success client:127.0.0.1:51078
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:28,peer:127.0.0.1:51078
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:1
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=16 events=5 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-3\n, count:9
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-3\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-3\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-3\n
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51080 accpet success client:127.0.0.1:51080
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=25 events=1 oper=1 epfd=8
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=15 thread=127681769236160 total=12
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=26 events=1 oper=1 epfd=8
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=16 thread=127681769236160 total=13
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=27 events=1 oper=1 epfd=8
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=17 thread=127681769236160 total=14
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=28 events=1 oper=1 epfd=8
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=18 thread=127681769236160 total=15
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=17 events=5 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-5\n, count:9
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-5\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-5\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-5\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=18 events=5 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-6\n, count:9
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-6\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-6\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-6\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=19 events=5 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-9\n, count:9
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-9\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-9\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-9\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=20 events=5 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-8\n, count:9
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-8\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-8\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-8\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=21 events=5 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-7\n, count:9
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-7\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-7\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-7\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=22 events=5 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-11\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-11\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-11\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-11\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=23 events=5 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-12\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-12\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-12\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-12\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=24 events=5 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-1\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=14 events=1 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-2\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=15 events=1 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-0\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=16 events=1 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-3\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=17 events=1 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-5\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=18 events=1 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-6\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=19 events=1 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-9\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=20 events=1 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-8\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=21 events=1 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-7\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=22 events=1 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-11\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=23 events=1 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-12\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=24 events=1 oper=3 epfd=6
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:29,peer:127.0.0.1:51080
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:2
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51082 accpet success client:127.0.0.1:51082
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:30,peer:127.0.0.1:51082
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:2
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51110 accpet success client:127.0.0.1:51110
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:31,peer:127.0.0.1:51110
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:2
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51118 accpet success client:127.0.0.1:51118
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:32,peer:127.0.0.1:51118
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:2
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51120 accpet success client:127.0.0.1:51120
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:33,peer:127.0.0.1:51120
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:2
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51130 accpet success client:127.0.0.1:51130
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:34,peer:127.0.0.1:51130
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:2
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51134 accpet success client:127.0.0.1:51134
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:35,peer:127.0.0.1:51134
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:2
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51148 accpet success client:127.0.0.1:51148
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:36,peer:127.0.0.1:51148
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:2
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51152 accpet success client:127.0.0.1:51152
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:37,peer:127.0.0.1:51152
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:2
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51168 accpet success client:127.0.0.1:51168
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:38,peer:127.0.0.1:51168
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:2
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51178 accpet success client:127.0.0.1:51178
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:39,peer:127.0.0.1:51178
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:2
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51184 accpet success client:127.0.0.1:51184
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:40,peer:127.0.0.1:51184
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:2
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51190 accpet success client:127.0.0.1:51190
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:41,peer:127.0.0.1:51190
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:2
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51192 accpet success client:127.0.0.1:51192
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:42,peer:127.0.0.1:51192
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:2
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51198 accpet success client:127.0.0.1:51198
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:43,peer:127.0.0.1:51198
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:2
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-14\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-14\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-14\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-14\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=25 events=5 oper=3 epfd=8
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-10\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-10\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-10\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-10\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=26 events=5 oper=3 epfd=8
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-13\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-13\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-13\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-13\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=27 events=5 oper=3 epfd=8
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-16\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-16\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-16\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-16\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=28 events=5 oper=3 epfd=8
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-14\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=25 events=1 oper=3 epfd=8
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-10\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=26 events=1 oper=3 epfd=8
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-13\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=27 events=1 oper=3 epfd=8
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-16\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=28 events=1 oper=3 epfd=8
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=29 events=1 oper=1 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=19 thread=127681760843456 total=16
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=30 events=1 oper=1 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=20 thread=127681760843456 total=17
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=31 events=1 oper=1 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=21 thread=127681760843456 total=18
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=32 events=1 oper=1 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=22 thread=127681760843456 total=19
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=33 events=1 oper=1 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=23 thread=127681760843456 total=20
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=34 events=1 oper=1 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=24 thread=127681760843456 total=21
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=35 events=1 oper=1 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=25 thread=127681760843456 total=22
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=36 events=1 oper=1 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=26 thread=127681760843456 total=23
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=37 events=1 oper=1 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=27 thread=127681760843456 total=24
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=38 events=1 oper=1 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=28 thread=127681760843456 total=25
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=39 events=1 oper=1 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=29 thread=127681760843456 total=26
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=40 events=1 oper=1 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=30 thread=127681760843456 total=27
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=41 events=1 oper=1 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=31 thread=127681760843456 total=28
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=42 events=1 oper=1 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=32 thread=127681760843456 total=29
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=43 events=1 oper=1 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=33 thread=127681760843456 total=30
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-15\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-15\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-15\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-15\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=29 events=5 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-22\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-22\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-22\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-22\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=30 events=5 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-18\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-18\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-18\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-18\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=31 events=5 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-19\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-19\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-19\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-19\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=32 events=5 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-24\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-24\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-24\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-24\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=33 events=5 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-4\n, count:9
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-4\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-4\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-4\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=34 events=5 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-25\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-25\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-25\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-25\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=35 events=5 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-17\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-17\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-17\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-17\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=36 events=5 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-20\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-20\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-20\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-20\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=37 events=5 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-21\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-21\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-21\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-21\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=38 events=5 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-23\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-23\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-23\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-23\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=39 events=5 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-26\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-26\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-26\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-26\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=40 events=5 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-27\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-27\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-27\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-27\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=41 events=5 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-29\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-29\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-29\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-29\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=42 events=5 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-35\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-35\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-35\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-35\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=43 events=5 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-15\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=29 events=1 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-22\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=30 events=1 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-18\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=31 events=1 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-19\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=32 events=1 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-24\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=33 events=1 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-4\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=34 events=1 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-25\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=35 events=1 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-17\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=36 events=1 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-20\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=37 events=1 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-21\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=38 events=1 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-23\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=39 events=1 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-26\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=40 events=1 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-27\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=41 events=1 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-29\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=42 events=1 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-35\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=43 events=1 oper=3 epfd=10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51214 accpet success client:127.0.0.1:51214
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:44,peer:127.0.0.1:51214
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][83] - 进入InitInLoop
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=44 events=1 oper=1 epfd=12
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[connected] id=34 thread=127681752450752 total=31
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp][9] - received:hello-31\n, count:10
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:hello-31\n
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:hello-31\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/buffer.hpp][52] - 写入Buffer:echo:hello-31\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=44 events=5 oper=3 epfd=12
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][35] - 处理EPOLLOUT
+[2026-04-14 13:30:42][INFO][55199][CTS/include/buffer.hpp][27] - 读取Buffer:echo:hello-31\n
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=44 events=1 oper=3 epfd=12
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51216 accpet success client:127.0.0.1:51216
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:45,peer:127.0.0.1:51216
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51230 accpet success client:127.0.0.1:51230
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:46,peer:127.0.0.1:51230
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51240 accpet success client:127.0.0.1:51240
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:47,peer:127.0.0.1:51240
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51218 accpet success client:127.0.0.1:51218
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:48,peer:127.0.0.1:51218
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51254 accpet success client:127.0.0.1:51254
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:49,peer:127.0.0.1:51254
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51268 accpet success client:127.0.0.1:51268
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:50,peer:127.0.0.1:51268
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51274 accpet success client:127.0.0.1:51274
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:51,peer:127.0.0.1:51274
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51300 accpet success client:127.0.0.1:51300
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:52,peer:127.0.0.1:51300
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51282 accpet success client:127.0.0.1:51282
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:53,peer:127.0.0.1:51282
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51294 accpet success client:127.0.0.1:51294
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:54,peer:127.0.0.1:51294
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51314 accpet success client:127.0.0.1:51314
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:55,peer:127.0.0.1:51314
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51324 accpet success client:127.0.0.1:51324
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:56,peer:127.0.0.1:51324
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51322 accpet success client:127.0.0.1:51322
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:57,peer:127.0.0.1:51322
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51332 accpet success client:127.0.0.1:51332
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:58,peer:127.0.0.1:51332
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51342 accpet success client:127.0.0.1:51342
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:59,peer:127.0.0.1:51342
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51346 accpet success client:127.0.0.1:51346
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:60,peer:127.0.0.1:51346
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51362 accpet success client:127.0.0.1:51362
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:61,peer:127.0.0.1:51362
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51370 accpet success client:127.0.0.1:51370
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:62,peer:127.0.0.1:51370
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51378 accpet success client:127.0.0.1:51378
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:63,peer:127.0.0.1:51378
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51390 accpet success client:127.0.0.1:51390
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:64,peer:127.0.0.1:51390
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][35] - EpollCTL: fd=44 events=1 oper=2 epfd=12
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp][44] -   Success
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51392 accpet success client:127.0.0.1:51392
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:44,peer:127.0.0.1:51392
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][70] - 进入SmartChooseThread
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/ThreadLoopPool.hpp][87] - 选择loop-id:3
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][8] - con 构造完成
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/connection.h][63] - 进入init
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp][25] - 处理EPOLLIN
+[2026-04-14 13:30:42][INFO][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/socket.hpp][109] - 127.0.0.1:51400 accpet success client:127.0.0.1:51400
+[2026-04-14 13:30:42][DEBUG][55199][/home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp][6] - fd:65,peer:127.0.0.1:51400

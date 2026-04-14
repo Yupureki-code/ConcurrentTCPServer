@@ -181,7 +181,7 @@ CTS_static: cmake_check_build_system
 
 # fast build rule for target.
 CTS_static/fast:
-	$(MAKE) $(MAKESILENT) -f ConcurrentTCPServer/CMakeFiles/CTS_static.dir/build.make ConcurrentTCPServer/CMakeFiles/CTS_static.dir/build
+	$(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/build
 .PHONY : CTS_static/fast
 
 #=============================================================================
@@ -194,47 +194,8 @@ CTS_shared: cmake_check_build_system
 
 # fast build rule for target.
 CTS_shared/fast:
-	$(MAKE) $(MAKESILENT) -f ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/build.make ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/build
+	$(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/build
 .PHONY : CTS_shared/fast
-
-#=============================================================================
-# Target rules for targets named EchoServer_static
-
-# Build rule for target.
-EchoServer_static: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EchoServer_static
-.PHONY : EchoServer_static
-
-# fast build rule for target.
-EchoServer_static/fast:
-	$(MAKE) $(MAKESILENT) -f EchoServer/CMakeFiles/EchoServer_static.dir/build.make EchoServer/CMakeFiles/EchoServer_static.dir/build
-.PHONY : EchoServer_static/fast
-
-#=============================================================================
-# Target rules for targets named EchoServer_shared
-
-# Build rule for target.
-EchoServer_shared: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EchoServer_shared
-.PHONY : EchoServer_shared
-
-# fast build rule for target.
-EchoServer_shared/fast:
-	$(MAKE) $(MAKESILENT) -f EchoServer/CMakeFiles/EchoServer_shared.dir/build.make EchoServer/CMakeFiles/EchoServer_shared.dir/build
-.PHONY : EchoServer_shared/fast
-
-#=============================================================================
-# Target rules for targets named test_buffer
-
-# Build rule for target.
-test_buffer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_buffer
-.PHONY : test_buffer
-
-# fast build rule for target.
-test_buffer/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_buffer.dir/build.make tests/CMakeFiles/test_buffer.dir/build
-.PHONY : test_buffer/fast
 
 # Help Target
 help:
@@ -251,9 +212,6 @@ help:
 	@echo "... test"
 	@echo "... CTS_shared"
 	@echo "... CTS_static"
-	@echo "... EchoServer_shared"
-	@echo "... EchoServer_static"
-	@echo "... test_buffer"
 .PHONY : help
 
 

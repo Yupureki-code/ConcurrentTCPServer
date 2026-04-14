@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a CMakeFiles/CTS_static.dir/src/ConcurrentTCPServer.cpp.o CMakeFiles/CTS_static.dir/src/channel.cpp.o CMakeFiles/CTS_static.dir/src/connection.cpp.o CMakeFiles/CTS_static.dir/src/eventloop.cpp.o CMakeFiles/CTS_static.dir/src/poll.cpp.o CMakeFiles/CTS_static.dir/src/timewheel.cpp.o
+/usr/bin/ranlib /home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a

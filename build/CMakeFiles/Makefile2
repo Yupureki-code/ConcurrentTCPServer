@@ -63,202 +63,85 @@ CMAKE_BINARY_DIR = /home/yupureki/project/ConcurrentTCPServer/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: ConcurrentTCPServer/all
-all: EchoServer/all
-all: tests/all
+all: CTS/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: ConcurrentTCPServer/preinstall
-preinstall: EchoServer/preinstall
-preinstall: tests/preinstall
+preinstall: CTS/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: ConcurrentTCPServer/clean
-clean: EchoServer/clean
-clean: tests/clean
+clean: CTS/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory ConcurrentTCPServer
+# Directory level rules for directory CTS
 
 # Recursive "all" directory target.
-ConcurrentTCPServer/all: ConcurrentTCPServer/CMakeFiles/CTS_static.dir/all
-ConcurrentTCPServer/all: ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/all
-.PHONY : ConcurrentTCPServer/all
+CTS/all: CTS/CMakeFiles/CTS_static.dir/all
+CTS/all: CTS/CMakeFiles/CTS_shared.dir/all
+.PHONY : CTS/all
 
 # Recursive "preinstall" directory target.
-ConcurrentTCPServer/preinstall:
-.PHONY : ConcurrentTCPServer/preinstall
+CTS/preinstall:
+.PHONY : CTS/preinstall
 
 # Recursive "clean" directory target.
-ConcurrentTCPServer/clean: ConcurrentTCPServer/CMakeFiles/CTS_static.dir/clean
-ConcurrentTCPServer/clean: ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/clean
-.PHONY : ConcurrentTCPServer/clean
+CTS/clean: CTS/CMakeFiles/CTS_static.dir/clean
+CTS/clean: CTS/CMakeFiles/CTS_shared.dir/clean
+.PHONY : CTS/clean
 
 #=============================================================================
-# Directory level rules for directory EchoServer
-
-# Recursive "all" directory target.
-EchoServer/all: EchoServer/CMakeFiles/EchoServer_static.dir/all
-EchoServer/all: EchoServer/CMakeFiles/EchoServer_shared.dir/all
-.PHONY : EchoServer/all
-
-# Recursive "preinstall" directory target.
-EchoServer/preinstall:
-.PHONY : EchoServer/preinstall
-
-# Recursive "clean" directory target.
-EchoServer/clean: EchoServer/CMakeFiles/EchoServer_static.dir/clean
-EchoServer/clean: EchoServer/CMakeFiles/EchoServer_shared.dir/clean
-.PHONY : EchoServer/clean
-
-#=============================================================================
-# Directory level rules for directory tests
-
-# Recursive "all" directory target.
-tests/all: tests/CMakeFiles/test_buffer.dir/all
-.PHONY : tests/all
-
-# Recursive "preinstall" directory target.
-tests/preinstall:
-.PHONY : tests/preinstall
-
-# Recursive "clean" directory target.
-tests/clean: tests/CMakeFiles/test_buffer.dir/clean
-.PHONY : tests/clean
-
-#=============================================================================
-# Target rules for target ConcurrentTCPServer/CMakeFiles/CTS_static.dir
+# Target rules for target CTS/CMakeFiles/CTS_static.dir
 
 # All Build rule for target.
-ConcurrentTCPServer/CMakeFiles/CTS_static.dir/all:
-	$(MAKE) $(MAKESILENT) -f ConcurrentTCPServer/CMakeFiles/CTS_static.dir/build.make ConcurrentTCPServer/CMakeFiles/CTS_static.dir/depend
-	$(MAKE) $(MAKESILENT) -f ConcurrentTCPServer/CMakeFiles/CTS_static.dir/build.make ConcurrentTCPServer/CMakeFiles/CTS_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=7,8,9,10,11,12 "Built target CTS_static"
-.PHONY : ConcurrentTCPServer/CMakeFiles/CTS_static.dir/all
+CTS/CMakeFiles/CTS_static.dir/all:
+	$(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/depend
+	$(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=8,9,10,11,12,13,14 "Built target CTS_static"
+.PHONY : CTS/CMakeFiles/CTS_static.dir/all
 
 # Build rule for subdir invocation for target.
-ConcurrentTCPServer/CMakeFiles/CTS_static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ConcurrentTCPServer/CMakeFiles/CTS_static.dir/all
+CTS/CMakeFiles/CTS_static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CTS/CMakeFiles/CTS_static.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles 0
-.PHONY : ConcurrentTCPServer/CMakeFiles/CTS_static.dir/rule
+.PHONY : CTS/CMakeFiles/CTS_static.dir/rule
 
 # Convenience name for target.
-CTS_static: ConcurrentTCPServer/CMakeFiles/CTS_static.dir/rule
+CTS_static: CTS/CMakeFiles/CTS_static.dir/rule
 .PHONY : CTS_static
 
 # clean rule for target.
-ConcurrentTCPServer/CMakeFiles/CTS_static.dir/clean:
-	$(MAKE) $(MAKESILENT) -f ConcurrentTCPServer/CMakeFiles/CTS_static.dir/build.make ConcurrentTCPServer/CMakeFiles/CTS_static.dir/clean
-.PHONY : ConcurrentTCPServer/CMakeFiles/CTS_static.dir/clean
+CTS/CMakeFiles/CTS_static.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/clean
+.PHONY : CTS/CMakeFiles/CTS_static.dir/clean
 
 #=============================================================================
-# Target rules for target ConcurrentTCPServer/CMakeFiles/CTS_shared.dir
+# Target rules for target CTS/CMakeFiles/CTS_shared.dir
 
 # All Build rule for target.
-ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/all:
-	$(MAKE) $(MAKESILENT) -f ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/build.make ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/depend
-	$(MAKE) $(MAKESILENT) -f ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/build.make ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target CTS_shared"
-.PHONY : ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/all
+CTS/CMakeFiles/CTS_shared.dir/all:
+	$(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/depend
+	$(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target CTS_shared"
+.PHONY : CTS/CMakeFiles/CTS_shared.dir/all
 
 # Build rule for subdir invocation for target.
-ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/all
+CTS/CMakeFiles/CTS_shared.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CTS/CMakeFiles/CTS_shared.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles 0
-.PHONY : ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/rule
+.PHONY : CTS/CMakeFiles/CTS_shared.dir/rule
 
 # Convenience name for target.
-CTS_shared: ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/rule
+CTS_shared: CTS/CMakeFiles/CTS_shared.dir/rule
 .PHONY : CTS_shared
 
 # clean rule for target.
-ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/clean:
-	$(MAKE) $(MAKESILENT) -f ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/build.make ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/clean
-.PHONY : ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/clean
-
-#=============================================================================
-# Target rules for target EchoServer/CMakeFiles/EchoServer_static.dir
-
-# All Build rule for target.
-EchoServer/CMakeFiles/EchoServer_static.dir/all: ConcurrentTCPServer/CMakeFiles/CTS_static.dir/all
-	$(MAKE) $(MAKESILENT) -f EchoServer/CMakeFiles/EchoServer_static.dir/build.make EchoServer/CMakeFiles/EchoServer_static.dir/depend
-	$(MAKE) $(MAKESILENT) -f EchoServer/CMakeFiles/EchoServer_static.dir/build.make EchoServer/CMakeFiles/EchoServer_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=15,16 "Built target EchoServer_static"
-.PHONY : EchoServer/CMakeFiles/EchoServer_static.dir/all
-
-# Build rule for subdir invocation for target.
-EchoServer/CMakeFiles/EchoServer_static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EchoServer/CMakeFiles/EchoServer_static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles 0
-.PHONY : EchoServer/CMakeFiles/EchoServer_static.dir/rule
-
-# Convenience name for target.
-EchoServer_static: EchoServer/CMakeFiles/EchoServer_static.dir/rule
-.PHONY : EchoServer_static
-
-# clean rule for target.
-EchoServer/CMakeFiles/EchoServer_static.dir/clean:
-	$(MAKE) $(MAKESILENT) -f EchoServer/CMakeFiles/EchoServer_static.dir/build.make EchoServer/CMakeFiles/EchoServer_static.dir/clean
-.PHONY : EchoServer/CMakeFiles/EchoServer_static.dir/clean
-
-#=============================================================================
-# Target rules for target EchoServer/CMakeFiles/EchoServer_shared.dir
-
-# All Build rule for target.
-EchoServer/CMakeFiles/EchoServer_shared.dir/all: ConcurrentTCPServer/CMakeFiles/CTS_shared.dir/all
-	$(MAKE) $(MAKESILENT) -f EchoServer/CMakeFiles/EchoServer_shared.dir/build.make EchoServer/CMakeFiles/EchoServer_shared.dir/depend
-	$(MAKE) $(MAKESILENT) -f EchoServer/CMakeFiles/EchoServer_shared.dir/build.make EchoServer/CMakeFiles/EchoServer_shared.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=13,14 "Built target EchoServer_shared"
-.PHONY : EchoServer/CMakeFiles/EchoServer_shared.dir/all
-
-# Build rule for subdir invocation for target.
-EchoServer/CMakeFiles/EchoServer_shared.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EchoServer/CMakeFiles/EchoServer_shared.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles 0
-.PHONY : EchoServer/CMakeFiles/EchoServer_shared.dir/rule
-
-# Convenience name for target.
-EchoServer_shared: EchoServer/CMakeFiles/EchoServer_shared.dir/rule
-.PHONY : EchoServer_shared
-
-# clean rule for target.
-EchoServer/CMakeFiles/EchoServer_shared.dir/clean:
-	$(MAKE) $(MAKESILENT) -f EchoServer/CMakeFiles/EchoServer_shared.dir/build.make EchoServer/CMakeFiles/EchoServer_shared.dir/clean
-.PHONY : EchoServer/CMakeFiles/EchoServer_shared.dir/clean
-
-#=============================================================================
-# Target rules for target tests/CMakeFiles/test_buffer.dir
-
-# All Build rule for target.
-tests/CMakeFiles/test_buffer.dir/all: ConcurrentTCPServer/CMakeFiles/CTS_static.dir/all
-tests/CMakeFiles/test_buffer.dir/all: EchoServer/CMakeFiles/EchoServer_static.dir/all
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_buffer.dir/build.make tests/CMakeFiles/test_buffer.dir/depend
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_buffer.dir/build.make tests/CMakeFiles/test_buffer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=17,18 "Built target test_buffer"
-.PHONY : tests/CMakeFiles/test_buffer.dir/all
-
-# Build rule for subdir invocation for target.
-tests/CMakeFiles/test_buffer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles 10
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_buffer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/test_buffer.dir/rule
-
-# Convenience name for target.
-test_buffer: tests/CMakeFiles/test_buffer.dir/rule
-.PHONY : test_buffer
-
-# clean rule for target.
-tests/CMakeFiles/test_buffer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_buffer.dir/build.make tests/CMakeFiles/test_buffer.dir/clean
-.PHONY : tests/CMakeFiles/test_buffer.dir/clean
+CTS/CMakeFiles/CTS_shared.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/clean
+.PHONY : CTS/CMakeFiles/CTS_shared.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
