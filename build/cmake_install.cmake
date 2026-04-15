@@ -47,10 +47,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/yupureki/project/ConcurrentTCPServer/build/CTS/cmake_install.cmake")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/CTS" TYPE DIRECTORY FILES "/home/yupureki/project/ConcurrentTCPServer/CTS/include/" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.h$")
-endif()
-
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()

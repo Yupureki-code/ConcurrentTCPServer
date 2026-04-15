@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/yupureki/project/ConcurrentTCPServer/CTS/include
+CXX_INCLUDES = -I/home/yupureki/project/ConcurrentTCPServer/CTS/include -I/home/yupureki/project/ConcurrentTCPServer -I/home/yupureki/project/ConcurrentTCPServer/Logger/include
 
 CXX_FLAGS = -std=gnu++17
 

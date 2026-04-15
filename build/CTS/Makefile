@@ -226,6 +226,114 @@ src/ConcurrentTCPServer.cpp.s:
 	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/ConcurrentTCPServer.cpp.s
 .PHONY : src/ConcurrentTCPServer.cpp.s
 
+src/InetAddr.o: src/InetAddr.cpp.o
+.PHONY : src/InetAddr.o
+
+# target to build an object file
+src/InetAddr.cpp.o:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/InetAddr.cpp.o
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/InetAddr.cpp.o
+.PHONY : src/InetAddr.cpp.o
+
+src/InetAddr.i: src/InetAddr.cpp.i
+.PHONY : src/InetAddr.i
+
+# target to preprocess a source file
+src/InetAddr.cpp.i:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/InetAddr.cpp.i
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/InetAddr.cpp.i
+.PHONY : src/InetAddr.cpp.i
+
+src/InetAddr.s: src/InetAddr.cpp.s
+.PHONY : src/InetAddr.s
+
+# target to generate assembly for a file
+src/InetAddr.cpp.s:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/InetAddr.cpp.s
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/InetAddr.cpp.s
+.PHONY : src/InetAddr.cpp.s
+
+src/ThreadLoopPool.o: src/ThreadLoopPool.cpp.o
+.PHONY : src/ThreadLoopPool.o
+
+# target to build an object file
+src/ThreadLoopPool.cpp.o:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.o
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/ThreadLoopPool.cpp.o
+.PHONY : src/ThreadLoopPool.cpp.o
+
+src/ThreadLoopPool.i: src/ThreadLoopPool.cpp.i
+.PHONY : src/ThreadLoopPool.i
+
+# target to preprocess a source file
+src/ThreadLoopPool.cpp.i:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.i
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/ThreadLoopPool.cpp.i
+.PHONY : src/ThreadLoopPool.cpp.i
+
+src/ThreadLoopPool.s: src/ThreadLoopPool.cpp.s
+.PHONY : src/ThreadLoopPool.s
+
+# target to generate assembly for a file
+src/ThreadLoopPool.cpp.s:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.s
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/ThreadLoopPool.cpp.s
+.PHONY : src/ThreadLoopPool.cpp.s
+
+src/acceptor.o: src/acceptor.cpp.o
+.PHONY : src/acceptor.o
+
+# target to build an object file
+src/acceptor.cpp.o:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/acceptor.cpp.o
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/acceptor.cpp.o
+.PHONY : src/acceptor.cpp.o
+
+src/acceptor.i: src/acceptor.cpp.i
+.PHONY : src/acceptor.i
+
+# target to preprocess a source file
+src/acceptor.cpp.i:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/acceptor.cpp.i
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/acceptor.cpp.i
+.PHONY : src/acceptor.cpp.i
+
+src/acceptor.s: src/acceptor.cpp.s
+.PHONY : src/acceptor.s
+
+# target to generate assembly for a file
+src/acceptor.cpp.s:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/acceptor.cpp.s
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/acceptor.cpp.s
+.PHONY : src/acceptor.cpp.s
+
+src/buffer.o: src/buffer.cpp.o
+.PHONY : src/buffer.o
+
+# target to build an object file
+src/buffer.cpp.o:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/buffer.cpp.o
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/buffer.cpp.o
+.PHONY : src/buffer.cpp.o
+
+src/buffer.i: src/buffer.cpp.i
+.PHONY : src/buffer.i
+
+# target to preprocess a source file
+src/buffer.cpp.i:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/buffer.cpp.i
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/buffer.cpp.i
+.PHONY : src/buffer.cpp.i
+
+src/buffer.s: src/buffer.cpp.s
+.PHONY : src/buffer.s
+
+# target to generate assembly for a file
+src/buffer.cpp.s:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/buffer.cpp.s
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/buffer.cpp.s
+.PHONY : src/buffer.cpp.s
+
 src/channel.o: src/channel.cpp.o
 .PHONY : src/channel.o
 
@@ -252,6 +360,60 @@ src/channel.cpp.s:
 	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/channel.cpp.s
 	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/channel.cpp.s
 .PHONY : src/channel.cpp.s
+
+src/comm.o: src/comm.cpp.o
+.PHONY : src/comm.o
+
+# target to build an object file
+src/comm.cpp.o:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/comm.cpp.o
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/comm.cpp.o
+.PHONY : src/comm.cpp.o
+
+src/comm.i: src/comm.cpp.i
+.PHONY : src/comm.i
+
+# target to preprocess a source file
+src/comm.cpp.i:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/comm.cpp.i
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/comm.cpp.i
+.PHONY : src/comm.cpp.i
+
+src/comm.s: src/comm.cpp.s
+.PHONY : src/comm.s
+
+# target to generate assembly for a file
+src/comm.cpp.s:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/comm.cpp.s
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/comm.cpp.s
+.PHONY : src/comm.cpp.s
+
+src/cond.o: src/cond.cpp.o
+.PHONY : src/cond.o
+
+# target to build an object file
+src/cond.cpp.o:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/cond.cpp.o
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/cond.cpp.o
+.PHONY : src/cond.cpp.o
+
+src/cond.i: src/cond.cpp.i
+.PHONY : src/cond.i
+
+# target to preprocess a source file
+src/cond.cpp.i:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/cond.cpp.i
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/cond.cpp.i
+.PHONY : src/cond.cpp.i
+
+src/cond.s: src/cond.cpp.s
+.PHONY : src/cond.s
+
+# target to generate assembly for a file
+src/cond.cpp.s:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/cond.cpp.s
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/cond.cpp.s
+.PHONY : src/cond.cpp.s
 
 src/connection.o: src/connection.cpp.o
 .PHONY : src/connection.o
@@ -307,6 +469,33 @@ src/eventloop.cpp.s:
 	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/eventloop.cpp.s
 .PHONY : src/eventloop.cpp.s
 
+src/lock.o: src/lock.cpp.o
+.PHONY : src/lock.o
+
+# target to build an object file
+src/lock.cpp.o:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/lock.cpp.o
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/lock.cpp.o
+.PHONY : src/lock.cpp.o
+
+src/lock.i: src/lock.cpp.i
+.PHONY : src/lock.i
+
+# target to preprocess a source file
+src/lock.cpp.i:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/lock.cpp.i
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/lock.cpp.i
+.PHONY : src/lock.cpp.i
+
+src/lock.s: src/lock.cpp.s
+.PHONY : src/lock.s
+
+# target to generate assembly for a file
+src/lock.cpp.s:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/lock.cpp.s
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/lock.cpp.s
+.PHONY : src/lock.cpp.s
+
 src/poll.o: src/poll.cpp.o
 .PHONY : src/poll.o
 
@@ -333,6 +522,33 @@ src/poll.cpp.s:
 	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/poll.cpp.s
 	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/poll.cpp.s
 .PHONY : src/poll.cpp.s
+
+src/socket.o: src/socket.cpp.o
+.PHONY : src/socket.o
+
+# target to build an object file
+src/socket.cpp.o:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/socket.cpp.o
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/socket.cpp.o
+.PHONY : src/socket.cpp.o
+
+src/socket.i: src/socket.cpp.i
+.PHONY : src/socket.i
+
+# target to preprocess a source file
+src/socket.cpp.i:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/socket.cpp.i
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/socket.cpp.i
+.PHONY : src/socket.cpp.i
+
+src/socket.s: src/socket.cpp.s
+.PHONY : src/socket.s
+
+# target to generate assembly for a file
+src/socket.cpp.s:
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_static.dir/build.make CTS/CMakeFiles/CTS_static.dir/src/socket.cpp.s
+	cd /home/yupureki/project/ConcurrentTCPServer/build && $(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/src/socket.cpp.s
+.PHONY : src/socket.cpp.s
 
 src/timewheel.o: src/timewheel.cpp.o
 .PHONY : src/timewheel.o
@@ -379,18 +595,42 @@ help:
 	@echo "... src/ConcurrentTCPServer.o"
 	@echo "... src/ConcurrentTCPServer.i"
 	@echo "... src/ConcurrentTCPServer.s"
+	@echo "... src/InetAddr.o"
+	@echo "... src/InetAddr.i"
+	@echo "... src/InetAddr.s"
+	@echo "... src/ThreadLoopPool.o"
+	@echo "... src/ThreadLoopPool.i"
+	@echo "... src/ThreadLoopPool.s"
+	@echo "... src/acceptor.o"
+	@echo "... src/acceptor.i"
+	@echo "... src/acceptor.s"
+	@echo "... src/buffer.o"
+	@echo "... src/buffer.i"
+	@echo "... src/buffer.s"
 	@echo "... src/channel.o"
 	@echo "... src/channel.i"
 	@echo "... src/channel.s"
+	@echo "... src/comm.o"
+	@echo "... src/comm.i"
+	@echo "... src/comm.s"
+	@echo "... src/cond.o"
+	@echo "... src/cond.i"
+	@echo "... src/cond.s"
 	@echo "... src/connection.o"
 	@echo "... src/connection.i"
 	@echo "... src/connection.s"
 	@echo "... src/eventloop.o"
 	@echo "... src/eventloop.i"
 	@echo "... src/eventloop.s"
+	@echo "... src/lock.o"
+	@echo "... src/lock.i"
+	@echo "... src/lock.s"
 	@echo "... src/poll.o"
 	@echo "... src/poll.i"
 	@echo "... src/poll.s"
+	@echo "... src/socket.o"
+	@echo "... src/socket.i"
+	@echo "... src/socket.s"
 	@echo "... src/timewheel.o"
 	@echo "... src/timewheel.i"
 	@echo "... src/timewheel.s"

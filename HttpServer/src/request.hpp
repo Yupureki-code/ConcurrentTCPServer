@@ -62,6 +62,13 @@ public:
         std::smatch match;
         _matches.swap(match);
     }
+    bool IsKeepAlive()
+    {
+        if(!HasHeader("Connection"))
+            return false;
+        std::string connection = GetHeader("Connection");
+        return connection == "keep-alive" || connection == "Keep-Alive";
+    }
 public:
     std::string _method;
     std::string _path;

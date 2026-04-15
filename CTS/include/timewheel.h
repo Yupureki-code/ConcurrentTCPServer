@@ -1,7 +1,10 @@
 #pragma once
 
 #include "comm.hpp"
+#include "channel.h"
+#include <memory>
 #include <queue>
+#include <sys/timerfd.h>
 
 class EventLoop;
 
@@ -48,12 +51,12 @@ private:
     void RefreshTimeTaskInLoop(size_t id);
     void DeleteTimeTaskInLoop(size_t id);
 public:
-    TimeWheel(int capacity = DEFAULT_TIMEWHEEL_NUM,EventLoop* loop = nullptr)
-    :_capacity(capacity),_timewheel(capacity),_loop(loop)
-    {}
+    TimeWheel(int capacity = DEFAULT_TIMEWHEEL_NUM,EventLoop* loop = nullptr);
     bool IsTimeTaskExists(size_t id);
     void RunOneTime();
-    size_t GetTick() const { return _tick; }
+    int CreateTimeFd();
+    int ReadTimeFd();
+    size_t GetTick() const;
     void EnableTimeTask(size_t id);
     void UnableTimeTask(size_t id);
     void AddTimeTask(size_t id,size_t timeout,TimeOutCallBack cb);
@@ -64,5 +67,7 @@ private:
     std::unordered_map<size_t,WeakTimeTask> _timers;
     size_t _capacity;
     int _tick = 0;
+    int _timefd;
+    std::unique_ptr<Channel> _time_channel;
     EventLoop* _loop;
 };

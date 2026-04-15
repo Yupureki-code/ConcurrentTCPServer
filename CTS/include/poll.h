@@ -15,9 +15,9 @@ public:
     Poll(int num = MAX_EPOLL_NUM);
     void AddChannel(Channel* channel);
     void RemoveChannel(Channel* channel);
-    void Run(std::vector<Channel*>& actives, int timeout_ms = -1);
-    int GetPollNums(){return _channels.size();}
-    int GetEpfd(){return _epfd;}
+    void Run(std::vector<Channel*>& actives);
+    int GetPollNums();
+    int GetEpfd();
 private:
     int _epfd;
     std::vector<struct epoll_event> _events;

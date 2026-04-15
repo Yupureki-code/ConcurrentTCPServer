@@ -1,5 +1,16 @@
 #include "../include/eventloop.h"
 #include "../include/channel.h"
+#include "../include/logstrategy.hpp"
+
+bool EventLoop::IsInLoop(){ return _thread_id == std::this_thread::get_id(); }
+void EventLoop::EnableTimeTask(size_t id){ _timewheel.EnableTimeTask(id); }
+void EventLoop::UnableTimeTask(size_t id){ _timewheel.UnableTimeTask(id); }
+void EventLoop::AddTimeTask(size_t id,size_t timeout,TimeOutCallBack cb){ _timewheel.AddTimeTask(id, timeout, cb); }
+void EventLoop::RefreshTimeTask(size_t id){ _timewheel.RefreshTimeTask(id); }
+void EventLoop::DeleteTimeTask(size_t id){ _timewheel.DeleteTimeTask(id); }
+void EventLoop::AddChannel(Channel* channel){ _poll.AddChannel(channel); }
+void EventLoop::RemoveChannel(Channel* channel){ _poll.RemoveChannel(channel); }
+int EventLoop::GetConsNums(){ return _poll.GetPollNums(); }
 
 EventLoop::EventLoop()
     :_thread_id(std::this_thread::get_id()),_timewheel(60,this),_poll(0)
@@ -45,11 +56,10 @@ void EventLoop::Run()
     while(1)
     {
         std::vector<Channel*> active;
-        _poll.Run(active, 1000);
+        _poll.Run(active);
         for(auto & it : active)
             (*it).HandlerEvent();
         RunAllTasks();
-        _timewheel.RunOneTime();
     }
 }
 

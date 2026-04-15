@@ -1,7 +1,6 @@
 #pragma once
 
-#include <vector>
-#include <unordered_map>
+#include "comm.hpp"
 
 class Channel;
 
@@ -17,7 +16,8 @@ public:
     void AddChannel(Channel* channel);
     void RemoveChannel(Channel* channel);
     void Run(std::vector<Channel*>& actives);
-    int GetPollNums(){return _channels.size();}
+    int GetPollNums();
+    int GetEpfd();
 private:
     int _epfd;
     std::vector<struct epoll_event> _events;

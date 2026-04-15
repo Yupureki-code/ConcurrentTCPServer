@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/yupureki/project/ConcurrentTCPServer/Logger/output/lib/libLogger.a CMakeFiles/Logger_static.dir/src/logstrategy.cpp.o
+/usr/bin/ranlib /home/yupureki/project/ConcurrentTCPServer/Logger/output/lib/libLogger.a

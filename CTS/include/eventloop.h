@@ -1,6 +1,8 @@
 #pragma once
 
 #include "comm.hpp"
+#include "channel.h"
+#include "lock.hpp"
 #include "poll.h"
 #include "timewheel.h"
 #include <thread>
@@ -10,8 +12,6 @@
 #include <sys/eventfd.h>
 
 class Channel;
-
-using namespace ns_log;
 
 class EventLoop
 {
@@ -23,17 +23,17 @@ public:
     EventLoop();
     void Run();
     void RunAllTasks();
-    bool IsInLoop(){return _thread_id == std::this_thread::get_id();}
+    bool IsInLoop();
     void RunInLoop(const func& cb);
     void PushInLoop(const func& cb);
-    void EnableTimeTask(size_t id){_timewheel.EnableTimeTask(id);}
-    void UnableTimeTask(size_t id){_timewheel.UnableTimeTask(id);}
-    void AddTimeTask(size_t id,size_t timeout,TimeOutCallBack cb){_timewheel.AddTimeTask(id, timeout,cb);}
-    void RefreshTimeTask(size_t id){_timewheel.RefreshTimeTask(id);}
-    void DeleteTimeTask(size_t id){_timewheel.DeleteTimeTask(id);}
-    void AddChannel(Channel * channel){_poll.AddChannel(channel);}
-    void RemoveChannel(Channel * channel){_poll.RemoveChannel(channel);}
-    int GetConsNums(){return _poll.GetPollNums();}
+    void EnableTimeTask(size_t id);
+    void UnableTimeTask(size_t id);
+    void AddTimeTask(size_t id,size_t timeout,TimeOutCallBack cb);
+    void RefreshTimeTask(size_t id);
+    void DeleteTimeTask(size_t id);
+    void AddChannel(Channel * channel);
+    void RemoveChannel(Channel * channel);
+    int GetConsNums();
 private:
     std::thread::id _thread_id;
     int _event_fd;

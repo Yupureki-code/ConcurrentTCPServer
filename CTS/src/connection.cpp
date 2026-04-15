@@ -1,6 +1,60 @@
 #include "../include/connection.h"
+#include <cerrno>
 #include <cassert>
 #include <memory>
+
+void Connection::SetConnectedCallBack(ConnectedCallBack cb){ _connected_cb = cb; }
+void Connection::SetMessageCallBack(MessageCallBack cb){ _message_cb = cb; }
+void Connection::SetEventCallBack(EventCallBack cb){ _event_cb = cb; }
+void Connection::SetCloseCallBack(CloseCallBack cb){ _close_cb = cb; }
+void Connection::SetCloseSvrCallBack(CloseCallBack cb){ _close_server_cb = cb; }
+uint64_t Connection::GetId()const{ return _id; }
+int Connection::GetFd()const{ return _socket->get_sockfd(); }
+Context Connection::GetContext()const{ return _context; }
+InetAddr Connection::GetPeerAddr()const{ return _peer; }
+ConStatus Connection::GetStatus()const{ return _status; }
+void Connection::SetStatus(ConStatus status){ _status = status; }
+void Connection::EnableInactiveRelease(size_t sec)
+{
+    auto self = shared_from_this();
+    _loop->RunInLoop([self, sec]() { self->EnableInactiveReleaseInLoop(sec); });
+}
+void Connection::UnableInactiveRelease()
+{
+    auto self = shared_from_this();
+    _loop->RunInLoop([self]() { self->UnableInactiveReleaseInLoop(); });
+}
+void Connection::SetContext(Context& context){ _context = context; }
+void Connection::ShutDown()
+{
+    auto self = shared_from_this();
+    _loop->RunInLoop([self]() { self->ShutDownInLoop(); });
+}
+void Connection::Send(const std::string& info)
+{
+    auto self = shared_from_this();
+    _loop->RunInLoop([self, info]() { self->SendInLoop(info); });
+}
+void Connection::Release()
+{
+    auto self = shared_from_this();
+    _loop->RunInLoop([self]() { self->ReleaseInLoop(); });
+}
+void Connection::Init()
+{
+    logger(ns_log::DEBUG) << "进入init";
+    assert(_loop != nullptr);
+    auto self = shared_from_this();
+    _loop->RunInLoop([self]() { self->InitInLoop(); });
+}
+void Connection::Update(Context context,ConnectedCallBack connect_cb,MessageCallBack message_cb,EventCallBack event_cb,CloseCallBack close_cb)
+{
+    assert(_loop->IsInLoop());
+    auto self = shared_from_this();
+    _loop->PushInLoop([self, context, connect_cb, message_cb, event_cb, close_cb]() {
+        self->UpdateInLoop(context, connect_cb, message_cb, event_cb, close_cb);
+    });
+}
 
 void Connection::HandlerRead()
 {
@@ -25,12 +79,28 @@ void Connection::HandlerRead()
 }
 void Connection::HandlerWrite()
 {
-    int n = _socket->NonBlockSend(_out_buffer.Read());
+    std::string out = _out_buffer.Read();
+    if(out.empty())
+    {
+        _channel.UnableWrite();
+        return;
+    }
+    int n = _socket->NonBlockSend(out);
     if(n < 0)
     {
+        _out_buffer.Write(out);
+        if(errno == EAGAIN || errno == EWOULDBLOCK || errno == EINTR)
+            return;
         if(_in_buffer.Size())
             _message_cb(shared_from_this(),_in_buffer);
         Release();
+        return;
+    }
+    if(static_cast<size_t>(n) < out.size())
+    {
+        _out_buffer.Write(out.substr(n));
+        _channel.EnableWrite();
+        return;
     }
     if(_out_buffer.Size() == 0)
     {

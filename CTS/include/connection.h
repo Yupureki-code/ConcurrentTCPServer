@@ -1,5 +1,6 @@
 #pragma once
 
+#include "InetAddr.h"
 #include "InetAddr.hpp"
 #include "channel.h"
 #include "comm.hpp"
@@ -10,7 +11,7 @@
 #include <sys/epoll.h>
 #include <system_error>
 #include <any>
-#include "logstrategy.hpp"
+#include <Logger/logstrategy.h>
 #include "socket.hpp"
 #include "eventloop.h"
 #include "buffer.hpp"
@@ -45,57 +46,25 @@ private:
     void SendInLoop(const std::string& info);
 public:
     Connection(uint64_t _id,EventLoop* loop,int fd,const InetAddr& peer);
-    void SetConnectedCallBack(ConnectedCallBack cb){_connected_cb = cb;}
-    void SetMessageCallBack(MessageCallBack cb){_message_cb = cb;}
-    void SetEventCallBack(EventCallBack cb){_event_cb = cb;}
-    void SetCloseCallBack(CloseCallBack cb){_close_cb = cb;}
-    void SetCloseSvrCallBack(CloseCallBack cb){_close_server_cb = cb;}
-    uint64_t GetId()const{return _id;}
-    int GetFd()const{return _socket->get_sockfd();}
-    Context GetContext()const{return _context;}
-    ConStatus GetStatus()const{return _status;}
-    void SetStatus(ConStatus status){_status = status;}
-    void EnableInactiveRelease(size_t sec)
-    {
-        auto self = shared_from_this();
-        _loop->RunInLoop([self, sec]() { self->EnableInactiveReleaseInLoop(sec); });
-    }
-    void UnableInactiveRelease()
-    {
-        auto self = shared_from_this();
-        _loop->RunInLoop([self]() { self->UnableInactiveReleaseInLoop(); });
-    };
-    void SetContext(Context& context){_context = context;}
-    void ShutDown()
-    {
-        auto self = shared_from_this();
-        _loop->RunInLoop([self]() { self->ShutDownInLoop(); });
-    }
-    void Send(const std::string& info)
-    {
-        auto self = shared_from_this();
-        _loop->RunInLoop([self, info]() { self->SendInLoop(info); });
-    };
-    void Release()
-    {
-        auto self = shared_from_this();
-        _loop->RunInLoop([self]() { self->ReleaseInLoop(); });
-    };
-    void Init()
-    {
-        logger(ns_log::DEBUG)<<"进入init";
-        assert(_loop != nullptr);
-        auto self = shared_from_this();
-        _loop->RunInLoop([self]() { self->InitInLoop(); });
-    };
-    void Update(Context context,ConnectedCallBack connect_cb,MessageCallBack message_cb,EventCallBack event_cb,CloseCallBack close_cb)
-    {
-        assert(_loop->IsInLoop());
-        auto self = shared_from_this();
-        _loop->PushInLoop([self, context, connect_cb, message_cb, event_cb, close_cb]() {
-            self->UpdateInLoop(context, connect_cb, message_cb, event_cb, close_cb);
-        });
-    }
+    void SetConnectedCallBack(ConnectedCallBack cb);
+    void SetMessageCallBack(MessageCallBack cb);
+    void SetEventCallBack(EventCallBack cb);
+    void SetCloseCallBack(CloseCallBack cb);
+    void SetCloseSvrCallBack(CloseCallBack cb);
+    uint64_t GetId()const;
+    int GetFd()const;
+    Context GetContext()const;
+    ConStatus GetStatus()const;
+    InetAddr GetPeerAddr()const;
+    void SetStatus(ConStatus status);
+    void EnableInactiveRelease(size_t sec);
+    void UnableInactiveRelease();
+    void SetContext(Context& context);
+    void ShutDown();
+    void Send(const std::string& info);
+    void Release();
+    void Init();
+    void Update(Context context,ConnectedCallBack connect_cb,MessageCallBack message_cb,EventCallBack event_cb,CloseCallBack close_cb);
 private:
     uint64_t _id;
     Context _context;

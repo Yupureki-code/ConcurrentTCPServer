@@ -3,6 +3,9 @@
 
 using namespace ns_log;
 
+int Poll::GetPollNums(){ return _channels.size(); }
+int Poll::GetEpfd(){ return _epfd; }
+
 Poll::Poll(int num)
     :_events(num > 0 ? num : MAX_EPOLL_NUM)
 {
@@ -10,7 +13,7 @@ Poll::Poll(int num)
     logger(ns_log::INFO) << "Poll created: epfd=" << _epfd;
     if(_epfd < 0)
     {
-        logger(FATAL)<<"epoll create error!";
+        logger(ns_log::FATAL)<<"epoll create error!";
         exit(ExitCode::EPOLL_CREATE);
     }
 }
@@ -64,9 +67,9 @@ void Poll::RemoveChannel(Channel* channel)
     }
 }
 
-void Poll::Run(std::vector<Channel*>& actives, int timeout_ms)
+void Poll::Run(std::vector<Channel*>& actives)
 {
-    int n = epoll_wait(_epfd, &_events[0], _events.size(), timeout_ms);
+    int n = epoll_wait(_epfd, &_events[0], _events.size(), -1);
     if(n < 0)
     {
         logger(ns_log::FATAL)<<"epoll wait error!";

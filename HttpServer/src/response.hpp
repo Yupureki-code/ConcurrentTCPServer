@@ -1,5 +1,6 @@
 #include <string>
 #include <unordered_map>
+#include "Util.hpp"
 
 class HttpResponse
 {
@@ -22,14 +23,6 @@ public:
         auto it = _headers.find(key);
         return it != _headers.end();
     }
-    void SetBody(const std::string& body)
-    {
-        _body = body;
-    }
-    std::string GetBody()const
-    {        
-        return _body;
-    }
     bool Close()const
     {
         auto it = _headers.find("Connection");
@@ -37,7 +30,18 @@ public:
             return true;
         return false;
     }
-private:
+    std::string Serialize()const
+    {
+        std::string res = "HTTP/1.1 " + std::to_string(_status) + " " + Util::StatusToDesc(_status) + "\r\n";
+        for(auto & it : _headers)
+        {
+            res += it.first + ": " + it.second + "\r\n";
+        }
+        res += "\r\n";
+        res += _body;
+        return res;
+    }
+public:
     int _status;
     bool _is_redirect;
     std::string _redirect_url;

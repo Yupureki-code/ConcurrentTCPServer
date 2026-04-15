@@ -1,9 +1,9 @@
 #pragma once
 
 #include "comm.hpp"
-#include "eventloop.h"
 #include <memory>
 
+class EventLoop;
 class Poll;
 
 class Channel
@@ -11,30 +11,24 @@ class Channel
 private:
     using EventCallBack = std::function<void()>;
 public: 
-    Channel(int fd,EventLoop* loop = nullptr)
-    :_fd(fd),_loop(loop),_events(0),_revents(0)
-    {}
-    int GetFd(){return _fd;}
-    void SetFd(int fd){_fd = fd;}
-    void SetLoop(EventLoop* loop){_loop = loop;}
-    uint32_t GetEvents(){return _events;}
-    void SetREvents(uint32_t events){_revents = events;}
-    void SetEventCallBack(const EventCallBack& cb){ _event = cb;}
-    void SetReadCallBack(const EventCallBack& cb){ _read = cb;}
-    void SetWriteCallBack(const EventCallBack& cb){ _write = cb;}
-    void SetErrorCallBack(const EventCallBack& cb){ _error = cb;}
-    void SetCloseCallBack(const EventCallBack& cb){ _close = cb;}
-    void Tie(const std::shared_ptr<void>& ptr)
-    {
-        _tie = ptr;
-        _is_tied = true;
-    }
-    bool IsReadAble(){return _events & EPOLLIN;}
-    bool IsWriteAble(){return _events & EPOLLOUT;}
-    void EnableRead(){_events |= EPOLLIN;Add();}
-    void EnableWrite(){_events |= EPOLLOUT;Add();}
-    void UnableRead(){_events &= ~EPOLLIN;Add();}
-    void UnableWrite(){_events &= ~EPOLLOUT;Add();}
+    Channel(int fd,EventLoop* loop = nullptr);
+    int GetFd();
+    void SetFd(int fd);
+    void SetLoop(EventLoop* loop);
+    uint32_t GetEvents();
+    void SetREvents(uint32_t events);
+    void SetEventCallBack(const EventCallBack& cb);
+    void SetReadCallBack(const EventCallBack& cb);
+    void SetWriteCallBack(const EventCallBack& cb);
+    void SetErrorCallBack(const EventCallBack& cb);
+    void SetCloseCallBack(const EventCallBack& cb);
+    void Tie(const std::shared_ptr<void>& ptr);
+    bool IsReadAble();
+    bool IsWriteAble();
+    void EnableRead();
+    void EnableWrite();
+    void UnableRead();
+    void UnableWrite();
     void HandlerEvent();
     void Add();
     void Remove();

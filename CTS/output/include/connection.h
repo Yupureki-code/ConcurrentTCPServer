@@ -1,15 +1,20 @@
 #pragma once
 
 #include "InetAddr.h"
+#include "InetAddr.hpp"
 #include "channel.h"
+#include "comm.hpp"
 #include <algorithm>
+#include <cassert>
 #include <functional>
 #include <memory>
 #include <sys/epoll.h>
 #include <system_error>
 #include <any>
+#include <Logger/logstrategy.h>
+#include "socket.hpp"
 #include "eventloop.h"
-#include "buffer.h"
+#include "buffer.hpp"
 
 enum ConStatus{
     Connecting,
@@ -18,12 +23,9 @@ enum ConStatus{
     Disconnected
 };
 
-class Socket;
-
 class Connection : public std::enable_shared_from_this<Connection>
 {
 private:
-    using Context = std::string;
     using PtrConnection = std::shared_ptr<Connection>;
     using ConnectedCallBack = std::function<void(const PtrConnection&)>;
     using MessageCallBack = std::function<void(const PtrConnection&,Buffer&)>;
@@ -38,6 +40,7 @@ private:
     void UnableInactiveReleaseInLoop();
     void UpdateInLoop(Context context,ConnectedCallBack connect_cb,MessageCallBack message_cb,EventCallBack event_cb,CloseCallBack close_cb);
     void InitInLoop();
+    void BindChannelCallbacksInLoop();
     void ShutDownInLoop();
     void ReleaseInLoop();
     void SendInLoop(const std::string& info);
@@ -52,9 +55,11 @@ public:
     int GetFd()const;
     Context GetContext()const;
     ConStatus GetStatus()const;
-    void EnableInactiveRelease(size_t sec);
-    void SetContext(Context& context);
+    InetAddr GetPeerAddr()const;
     void SetStatus(ConStatus status);
+    void EnableInactiveRelease(size_t sec);
+    void UnableInactiveRelease();
+    void SetContext(Context& context);
     void ShutDown();
     void Send(const std::string& info);
     void Release();
@@ -70,7 +75,7 @@ private:
     Buffer _in_buffer;
     Buffer _out_buffer;
     ConStatus _status = Disconnected;
-    bool _enable_inactive_release;
+    bool _enable_inactive_release = false;
     ConnectedCallBack _connected_cb;
     MessageCallBack _message_cb;
     EventCallBack _event_cb;

@@ -83,10 +83,66 @@ CTS/CMakeFiles/CTS_static.dir/src/ConcurrentTCPServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CTS_static.dir/src/ConcurrentTCPServer.cpp.s"
 	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yupureki/project/ConcurrentTCPServer/CTS/src/ConcurrentTCPServer.cpp -o CMakeFiles/CTS_static.dir/src/ConcurrentTCPServer.cpp.s
 
+CTS/CMakeFiles/CTS_static.dir/src/InetAddr.cpp.o: CTS/CMakeFiles/CTS_static.dir/flags.make
+CTS/CMakeFiles/CTS_static.dir/src/InetAddr.cpp.o: /home/yupureki/project/ConcurrentTCPServer/CTS/src/InetAddr.cpp
+CTS/CMakeFiles/CTS_static.dir/src/InetAddr.cpp.o: CTS/CMakeFiles/CTS_static.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CTS/CMakeFiles/CTS_static.dir/src/InetAddr.cpp.o"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CTS/CMakeFiles/CTS_static.dir/src/InetAddr.cpp.o -MF CMakeFiles/CTS_static.dir/src/InetAddr.cpp.o.d -o CMakeFiles/CTS_static.dir/src/InetAddr.cpp.o -c /home/yupureki/project/ConcurrentTCPServer/CTS/src/InetAddr.cpp
+
+CTS/CMakeFiles/CTS_static.dir/src/InetAddr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CTS_static.dir/src/InetAddr.cpp.i"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yupureki/project/ConcurrentTCPServer/CTS/src/InetAddr.cpp > CMakeFiles/CTS_static.dir/src/InetAddr.cpp.i
+
+CTS/CMakeFiles/CTS_static.dir/src/InetAddr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CTS_static.dir/src/InetAddr.cpp.s"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yupureki/project/ConcurrentTCPServer/CTS/src/InetAddr.cpp -o CMakeFiles/CTS_static.dir/src/InetAddr.cpp.s
+
+CTS/CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.o: CTS/CMakeFiles/CTS_static.dir/flags.make
+CTS/CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.o: /home/yupureki/project/ConcurrentTCPServer/CTS/src/ThreadLoopPool.cpp
+CTS/CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.o: CTS/CMakeFiles/CTS_static.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CTS/CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.o"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CTS/CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.o -MF CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.o.d -o CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.o -c /home/yupureki/project/ConcurrentTCPServer/CTS/src/ThreadLoopPool.cpp
+
+CTS/CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.i"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yupureki/project/ConcurrentTCPServer/CTS/src/ThreadLoopPool.cpp > CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.i
+
+CTS/CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.s"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yupureki/project/ConcurrentTCPServer/CTS/src/ThreadLoopPool.cpp -o CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.s
+
+CTS/CMakeFiles/CTS_static.dir/src/acceptor.cpp.o: CTS/CMakeFiles/CTS_static.dir/flags.make
+CTS/CMakeFiles/CTS_static.dir/src/acceptor.cpp.o: /home/yupureki/project/ConcurrentTCPServer/CTS/src/acceptor.cpp
+CTS/CMakeFiles/CTS_static.dir/src/acceptor.cpp.o: CTS/CMakeFiles/CTS_static.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CTS/CMakeFiles/CTS_static.dir/src/acceptor.cpp.o"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CTS/CMakeFiles/CTS_static.dir/src/acceptor.cpp.o -MF CMakeFiles/CTS_static.dir/src/acceptor.cpp.o.d -o CMakeFiles/CTS_static.dir/src/acceptor.cpp.o -c /home/yupureki/project/ConcurrentTCPServer/CTS/src/acceptor.cpp
+
+CTS/CMakeFiles/CTS_static.dir/src/acceptor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CTS_static.dir/src/acceptor.cpp.i"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yupureki/project/ConcurrentTCPServer/CTS/src/acceptor.cpp > CMakeFiles/CTS_static.dir/src/acceptor.cpp.i
+
+CTS/CMakeFiles/CTS_static.dir/src/acceptor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CTS_static.dir/src/acceptor.cpp.s"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yupureki/project/ConcurrentTCPServer/CTS/src/acceptor.cpp -o CMakeFiles/CTS_static.dir/src/acceptor.cpp.s
+
+CTS/CMakeFiles/CTS_static.dir/src/buffer.cpp.o: CTS/CMakeFiles/CTS_static.dir/flags.make
+CTS/CMakeFiles/CTS_static.dir/src/buffer.cpp.o: /home/yupureki/project/ConcurrentTCPServer/CTS/src/buffer.cpp
+CTS/CMakeFiles/CTS_static.dir/src/buffer.cpp.o: CTS/CMakeFiles/CTS_static.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CTS/CMakeFiles/CTS_static.dir/src/buffer.cpp.o"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CTS/CMakeFiles/CTS_static.dir/src/buffer.cpp.o -MF CMakeFiles/CTS_static.dir/src/buffer.cpp.o.d -o CMakeFiles/CTS_static.dir/src/buffer.cpp.o -c /home/yupureki/project/ConcurrentTCPServer/CTS/src/buffer.cpp
+
+CTS/CMakeFiles/CTS_static.dir/src/buffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CTS_static.dir/src/buffer.cpp.i"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yupureki/project/ConcurrentTCPServer/CTS/src/buffer.cpp > CMakeFiles/CTS_static.dir/src/buffer.cpp.i
+
+CTS/CMakeFiles/CTS_static.dir/src/buffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CTS_static.dir/src/buffer.cpp.s"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yupureki/project/ConcurrentTCPServer/CTS/src/buffer.cpp -o CMakeFiles/CTS_static.dir/src/buffer.cpp.s
+
 CTS/CMakeFiles/CTS_static.dir/src/channel.cpp.o: CTS/CMakeFiles/CTS_static.dir/flags.make
 CTS/CMakeFiles/CTS_static.dir/src/channel.cpp.o: /home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp
 CTS/CMakeFiles/CTS_static.dir/src/channel.cpp.o: CTS/CMakeFiles/CTS_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CTS/CMakeFiles/CTS_static.dir/src/channel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CTS/CMakeFiles/CTS_static.dir/src/channel.cpp.o"
 	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CTS/CMakeFiles/CTS_static.dir/src/channel.cpp.o -MF CMakeFiles/CTS_static.dir/src/channel.cpp.o.d -o CMakeFiles/CTS_static.dir/src/channel.cpp.o -c /home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp
 
 CTS/CMakeFiles/CTS_static.dir/src/channel.cpp.i: cmake_force
@@ -97,10 +153,38 @@ CTS/CMakeFiles/CTS_static.dir/src/channel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CTS_static.dir/src/channel.cpp.s"
 	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp -o CMakeFiles/CTS_static.dir/src/channel.cpp.s
 
+CTS/CMakeFiles/CTS_static.dir/src/comm.cpp.o: CTS/CMakeFiles/CTS_static.dir/flags.make
+CTS/CMakeFiles/CTS_static.dir/src/comm.cpp.o: /home/yupureki/project/ConcurrentTCPServer/CTS/src/comm.cpp
+CTS/CMakeFiles/CTS_static.dir/src/comm.cpp.o: CTS/CMakeFiles/CTS_static.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CTS/CMakeFiles/CTS_static.dir/src/comm.cpp.o"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CTS/CMakeFiles/CTS_static.dir/src/comm.cpp.o -MF CMakeFiles/CTS_static.dir/src/comm.cpp.o.d -o CMakeFiles/CTS_static.dir/src/comm.cpp.o -c /home/yupureki/project/ConcurrentTCPServer/CTS/src/comm.cpp
+
+CTS/CMakeFiles/CTS_static.dir/src/comm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CTS_static.dir/src/comm.cpp.i"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yupureki/project/ConcurrentTCPServer/CTS/src/comm.cpp > CMakeFiles/CTS_static.dir/src/comm.cpp.i
+
+CTS/CMakeFiles/CTS_static.dir/src/comm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CTS_static.dir/src/comm.cpp.s"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yupureki/project/ConcurrentTCPServer/CTS/src/comm.cpp -o CMakeFiles/CTS_static.dir/src/comm.cpp.s
+
+CTS/CMakeFiles/CTS_static.dir/src/cond.cpp.o: CTS/CMakeFiles/CTS_static.dir/flags.make
+CTS/CMakeFiles/CTS_static.dir/src/cond.cpp.o: /home/yupureki/project/ConcurrentTCPServer/CTS/src/cond.cpp
+CTS/CMakeFiles/CTS_static.dir/src/cond.cpp.o: CTS/CMakeFiles/CTS_static.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CTS/CMakeFiles/CTS_static.dir/src/cond.cpp.o"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CTS/CMakeFiles/CTS_static.dir/src/cond.cpp.o -MF CMakeFiles/CTS_static.dir/src/cond.cpp.o.d -o CMakeFiles/CTS_static.dir/src/cond.cpp.o -c /home/yupureki/project/ConcurrentTCPServer/CTS/src/cond.cpp
+
+CTS/CMakeFiles/CTS_static.dir/src/cond.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CTS_static.dir/src/cond.cpp.i"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yupureki/project/ConcurrentTCPServer/CTS/src/cond.cpp > CMakeFiles/CTS_static.dir/src/cond.cpp.i
+
+CTS/CMakeFiles/CTS_static.dir/src/cond.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CTS_static.dir/src/cond.cpp.s"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yupureki/project/ConcurrentTCPServer/CTS/src/cond.cpp -o CMakeFiles/CTS_static.dir/src/cond.cpp.s
+
 CTS/CMakeFiles/CTS_static.dir/src/connection.cpp.o: CTS/CMakeFiles/CTS_static.dir/flags.make
 CTS/CMakeFiles/CTS_static.dir/src/connection.cpp.o: /home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp
 CTS/CMakeFiles/CTS_static.dir/src/connection.cpp.o: CTS/CMakeFiles/CTS_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CTS/CMakeFiles/CTS_static.dir/src/connection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CTS/CMakeFiles/CTS_static.dir/src/connection.cpp.o"
 	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CTS/CMakeFiles/CTS_static.dir/src/connection.cpp.o -MF CMakeFiles/CTS_static.dir/src/connection.cpp.o.d -o CMakeFiles/CTS_static.dir/src/connection.cpp.o -c /home/yupureki/project/ConcurrentTCPServer/CTS/src/connection.cpp
 
 CTS/CMakeFiles/CTS_static.dir/src/connection.cpp.i: cmake_force
@@ -114,7 +198,7 @@ CTS/CMakeFiles/CTS_static.dir/src/connection.cpp.s: cmake_force
 CTS/CMakeFiles/CTS_static.dir/src/eventloop.cpp.o: CTS/CMakeFiles/CTS_static.dir/flags.make
 CTS/CMakeFiles/CTS_static.dir/src/eventloop.cpp.o: /home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp
 CTS/CMakeFiles/CTS_static.dir/src/eventloop.cpp.o: CTS/CMakeFiles/CTS_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CTS/CMakeFiles/CTS_static.dir/src/eventloop.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CTS/CMakeFiles/CTS_static.dir/src/eventloop.cpp.o"
 	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CTS/CMakeFiles/CTS_static.dir/src/eventloop.cpp.o -MF CMakeFiles/CTS_static.dir/src/eventloop.cpp.o.d -o CMakeFiles/CTS_static.dir/src/eventloop.cpp.o -c /home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp
 
 CTS/CMakeFiles/CTS_static.dir/src/eventloop.cpp.i: cmake_force
@@ -125,10 +209,24 @@ CTS/CMakeFiles/CTS_static.dir/src/eventloop.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CTS_static.dir/src/eventloop.cpp.s"
 	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp -o CMakeFiles/CTS_static.dir/src/eventloop.cpp.s
 
+CTS/CMakeFiles/CTS_static.dir/src/lock.cpp.o: CTS/CMakeFiles/CTS_static.dir/flags.make
+CTS/CMakeFiles/CTS_static.dir/src/lock.cpp.o: /home/yupureki/project/ConcurrentTCPServer/CTS/src/lock.cpp
+CTS/CMakeFiles/CTS_static.dir/src/lock.cpp.o: CTS/CMakeFiles/CTS_static.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CTS/CMakeFiles/CTS_static.dir/src/lock.cpp.o"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CTS/CMakeFiles/CTS_static.dir/src/lock.cpp.o -MF CMakeFiles/CTS_static.dir/src/lock.cpp.o.d -o CMakeFiles/CTS_static.dir/src/lock.cpp.o -c /home/yupureki/project/ConcurrentTCPServer/CTS/src/lock.cpp
+
+CTS/CMakeFiles/CTS_static.dir/src/lock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CTS_static.dir/src/lock.cpp.i"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yupureki/project/ConcurrentTCPServer/CTS/src/lock.cpp > CMakeFiles/CTS_static.dir/src/lock.cpp.i
+
+CTS/CMakeFiles/CTS_static.dir/src/lock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CTS_static.dir/src/lock.cpp.s"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yupureki/project/ConcurrentTCPServer/CTS/src/lock.cpp -o CMakeFiles/CTS_static.dir/src/lock.cpp.s
+
 CTS/CMakeFiles/CTS_static.dir/src/poll.cpp.o: CTS/CMakeFiles/CTS_static.dir/flags.make
 CTS/CMakeFiles/CTS_static.dir/src/poll.cpp.o: /home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp
 CTS/CMakeFiles/CTS_static.dir/src/poll.cpp.o: CTS/CMakeFiles/CTS_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CTS/CMakeFiles/CTS_static.dir/src/poll.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CTS/CMakeFiles/CTS_static.dir/src/poll.cpp.o"
 	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CTS/CMakeFiles/CTS_static.dir/src/poll.cpp.o -MF CMakeFiles/CTS_static.dir/src/poll.cpp.o.d -o CMakeFiles/CTS_static.dir/src/poll.cpp.o -c /home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp
 
 CTS/CMakeFiles/CTS_static.dir/src/poll.cpp.i: cmake_force
@@ -139,10 +237,24 @@ CTS/CMakeFiles/CTS_static.dir/src/poll.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CTS_static.dir/src/poll.cpp.s"
 	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yupureki/project/ConcurrentTCPServer/CTS/src/poll.cpp -o CMakeFiles/CTS_static.dir/src/poll.cpp.s
 
+CTS/CMakeFiles/CTS_static.dir/src/socket.cpp.o: CTS/CMakeFiles/CTS_static.dir/flags.make
+CTS/CMakeFiles/CTS_static.dir/src/socket.cpp.o: /home/yupureki/project/ConcurrentTCPServer/CTS/src/socket.cpp
+CTS/CMakeFiles/CTS_static.dir/src/socket.cpp.o: CTS/CMakeFiles/CTS_static.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CTS/CMakeFiles/CTS_static.dir/src/socket.cpp.o"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CTS/CMakeFiles/CTS_static.dir/src/socket.cpp.o -MF CMakeFiles/CTS_static.dir/src/socket.cpp.o.d -o CMakeFiles/CTS_static.dir/src/socket.cpp.o -c /home/yupureki/project/ConcurrentTCPServer/CTS/src/socket.cpp
+
+CTS/CMakeFiles/CTS_static.dir/src/socket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CTS_static.dir/src/socket.cpp.i"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yupureki/project/ConcurrentTCPServer/CTS/src/socket.cpp > CMakeFiles/CTS_static.dir/src/socket.cpp.i
+
+CTS/CMakeFiles/CTS_static.dir/src/socket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CTS_static.dir/src/socket.cpp.s"
+	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yupureki/project/ConcurrentTCPServer/CTS/src/socket.cpp -o CMakeFiles/CTS_static.dir/src/socket.cpp.s
+
 CTS/CMakeFiles/CTS_static.dir/src/timewheel.cpp.o: CTS/CMakeFiles/CTS_static.dir/flags.make
 CTS/CMakeFiles/CTS_static.dir/src/timewheel.cpp.o: /home/yupureki/project/ConcurrentTCPServer/CTS/src/timewheel.cpp
 CTS/CMakeFiles/CTS_static.dir/src/timewheel.cpp.o: CTS/CMakeFiles/CTS_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CTS/CMakeFiles/CTS_static.dir/src/timewheel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CTS/CMakeFiles/CTS_static.dir/src/timewheel.cpp.o"
 	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CTS/CMakeFiles/CTS_static.dir/src/timewheel.cpp.o -MF CMakeFiles/CTS_static.dir/src/timewheel.cpp.o.d -o CMakeFiles/CTS_static.dir/src/timewheel.cpp.o -c /home/yupureki/project/ConcurrentTCPServer/CTS/src/timewheel.cpp
 
 CTS/CMakeFiles/CTS_static.dir/src/timewheel.cpp.i: cmake_force
@@ -156,24 +268,40 @@ CTS/CMakeFiles/CTS_static.dir/src/timewheel.cpp.s: cmake_force
 # Object files for target CTS_static
 CTS_static_OBJECTS = \
 "CMakeFiles/CTS_static.dir/src/ConcurrentTCPServer.cpp.o" \
+"CMakeFiles/CTS_static.dir/src/InetAddr.cpp.o" \
+"CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.o" \
+"CMakeFiles/CTS_static.dir/src/acceptor.cpp.o" \
+"CMakeFiles/CTS_static.dir/src/buffer.cpp.o" \
 "CMakeFiles/CTS_static.dir/src/channel.cpp.o" \
+"CMakeFiles/CTS_static.dir/src/comm.cpp.o" \
+"CMakeFiles/CTS_static.dir/src/cond.cpp.o" \
 "CMakeFiles/CTS_static.dir/src/connection.cpp.o" \
 "CMakeFiles/CTS_static.dir/src/eventloop.cpp.o" \
+"CMakeFiles/CTS_static.dir/src/lock.cpp.o" \
 "CMakeFiles/CTS_static.dir/src/poll.cpp.o" \
+"CMakeFiles/CTS_static.dir/src/socket.cpp.o" \
 "CMakeFiles/CTS_static.dir/src/timewheel.cpp.o"
 
 # External object files for target CTS_static
 CTS_static_EXTERNAL_OBJECTS =
 
 /home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a: CTS/CMakeFiles/CTS_static.dir/src/ConcurrentTCPServer.cpp.o
+/home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a: CTS/CMakeFiles/CTS_static.dir/src/InetAddr.cpp.o
+/home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a: CTS/CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.o
+/home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a: CTS/CMakeFiles/CTS_static.dir/src/acceptor.cpp.o
+/home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a: CTS/CMakeFiles/CTS_static.dir/src/buffer.cpp.o
 /home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a: CTS/CMakeFiles/CTS_static.dir/src/channel.cpp.o
+/home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a: CTS/CMakeFiles/CTS_static.dir/src/comm.cpp.o
+/home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a: CTS/CMakeFiles/CTS_static.dir/src/cond.cpp.o
 /home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a: CTS/CMakeFiles/CTS_static.dir/src/connection.cpp.o
 /home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a: CTS/CMakeFiles/CTS_static.dir/src/eventloop.cpp.o
+/home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a: CTS/CMakeFiles/CTS_static.dir/src/lock.cpp.o
 /home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a: CTS/CMakeFiles/CTS_static.dir/src/poll.cpp.o
+/home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a: CTS/CMakeFiles/CTS_static.dir/src/socket.cpp.o
 /home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a: CTS/CMakeFiles/CTS_static.dir/src/timewheel.cpp.o
 /home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a: CTS/CMakeFiles/CTS_static.dir/build.make
 /home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a: CTS/CMakeFiles/CTS_static.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library /home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX static library /home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a"
 	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && $(CMAKE_COMMAND) -P CMakeFiles/CTS_static.dir/cmake_clean_target.cmake
 	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CTS_static.dir/link.txt --verbose=$(VERBOSE)
 

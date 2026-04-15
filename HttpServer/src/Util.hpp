@@ -1,3 +1,5 @@
+#pragma once
+
 #include <string>
 #include <fstream>
 #include <sstream>
@@ -169,7 +171,7 @@ public:
         file<<info;
         return true;
     }
-    static std::string UrlEncode(std::string& url)
+    static std::string UrlEncode(const std::string& url,bool is_space_to_plus = false)
     {
         std::string result;
         for(size_t i = 0;i<url.size();i++)
@@ -179,15 +181,20 @@ public:
                 result += c;
             else
             {
-                char buf[4];
-                snprintf(buf,sizeof(buf),"%02X",(unsigned char)c);
-                result += '%';
-                result += buf;
+                if(is_space_to_plus && c == ' ')
+                    result += '+';
+                else
+                {
+                    char buf[4];
+                    snprintf(buf,sizeof(buf),"%02X",(unsigned char)c);
+                    result += '%';
+                    result += buf;
+                }
             }
         }
         return result;
     }
-    static std::string UrlDecode(std::string& url)
+    static std::string UrlDecode(const std::string& url,bool is_plus_to_space = false)
     {
         std::string result;
         for(size_t i = 0;i<url.size();i++)
@@ -201,7 +208,7 @@ public:
                 result += (char)strtol(buf,nullptr,16);
                 i += 2;
             }
-            else if(c == '+')
+            else if(c == '+' && is_plus_to_space)
                 result += ' ';
             else
                 result += c;

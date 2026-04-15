@@ -1,5 +1,23 @@
 #include "../include/timewheel.h"
 #include "../include/eventloop.h"
+#include "../include/timewheel.h"
+#include <cstdint>
+
+size_t TimeWheel::GetTick() const
+{
+    return _tick;
+}
+
+TimeWheel::TimeWheel(int capacity, EventLoop* loop)
+    : _capacity(capacity), _timewheel(capacity), _loop(loop),_time_channel(std::make_unique<Channel>(CreateTimeFd(), loop))
+{
+    _time_channel->SetReadCallBack([this]() {
+        _loop->PushInLoop([this]() {
+            RunOneTime();
+        });
+    });
+    _time_channel->EnableRead();
+}
 
 void TimeWheel::RemoveWeakTaskHelper(size_t id)
 {
@@ -15,6 +33,36 @@ bool TimeWheel::IsTimeTaskExists(size_t id)
     if(it == _timers.end())
         return false;
     return true;
+}
+
+int TimeWheel::CreateTimeFd()
+{
+    _timefd = timerfd_create(CLOCK_MONOTONIC, TFD_NONBLOCK | TFD_CLOEXEC);
+    if(_timefd < 0)
+    {
+        logger(ns_log::FATAL) << "timerfd create error!";
+        exit(ExitCode::TIMERFD_CREATE);
+    }
+    struct itimerspec new_value;
+    memset(&new_value, 0, sizeof(new_value));
+    new_value.it_interval.tv_sec = 1;
+    new_value.it_interval.tv_nsec = 0;
+    new_value.it_value.tv_sec = 1;
+    new_value.it_value.tv_nsec = 0;
+    timerfd_settime(_timefd, 0, &new_value, nullptr);
+    return _timefd;
+}
+
+int TimeWheel::ReadTimeFd()
+{
+    uint64_t expirations;
+    int n = read(_timefd, &expirations, sizeof(expirations));
+    if(n < 0)
+    {
+        logger(ns_log::FATAL) << "timerfd read error!";
+        exit(ExitCode::TIMERFD_READ);
+    }
+    return expirations;
 }
 
 bool TimeWheel::AddTimeTaskInLoop(size_t id,size_t timeout,TimeOutCallBack cb)
@@ -48,12 +96,16 @@ void TimeWheel::RefreshTimeTaskInLoop(size_t id)
 }
 void TimeWheel::RunOneTime()
 {
-    _tick = (_tick + 1)%_capacity;
-    auto& q = _timewheel[_tick];
-    while(!q.empty())
+    int times = ReadTimeFd();
+    for(int i = 0; i < times; ++i)
     {
-        auto task = std::move(q.front());
-        q.pop();
+        _tick = (_tick + 1)%_capacity;
+        auto& q = _timewheel[_tick];
+        while(!q.empty())
+        {
+            auto task = std::move(q.front());
+            q.pop();
+        }
     }
 }
 

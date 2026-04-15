@@ -1,0 +1,177 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.28.3/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.28/Modules/Platform/Linux.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.28/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"path" : "CTS/CMakeLists.txt"
+		},
+		{
+			"path" : "CTS/include/CTS.h"
+		},
+		{
+			"path" : "CTS/include/ConcurrentTCPServer.hpp"
+		},
+		{
+			"path" : "CTS/include/InetAddr.h"
+		},
+		{
+			"path" : "CTS/include/InetAddr.hpp"
+		},
+		{
+			"path" : "CTS/include/ThreadLoopPool.h"
+		},
+		{
+			"path" : "CTS/include/ThreadLoopPool.hpp"
+		},
+		{
+			"path" : "CTS/include/acceptor.h"
+		},
+		{
+			"path" : "CTS/include/acceptor.hpp"
+		},
+		{
+			"path" : "CTS/include/buffer.h"
+		},
+		{
+			"path" : "CTS/include/buffer.hpp"
+		},
+		{
+			"path" : "CTS/include/channel.h"
+		},
+		{
+			"path" : "CTS/include/comm.h"
+		},
+		{
+			"path" : "CTS/include/comm.hpp"
+		},
+		{
+			"path" : "CTS/include/cond.h"
+		},
+		{
+			"path" : "CTS/include/cond.hpp"
+		},
+		{
+			"path" : "CTS/include/connection.h"
+		},
+		{
+			"path" : "CTS/include/eventloop.h"
+		},
+		{
+			"path" : "CTS/include/lock.h"
+		},
+		{
+			"path" : "CTS/include/lock.hpp"
+		},
+		{
+			"path" : "CTS/include/logstrategy.hpp"
+		},
+		{
+			"path" : "CTS/include/poll.h"
+		},
+		{
+			"path" : "CTS/include/socket.h"
+		},
+		{
+			"path" : "CTS/include/socket.hpp"
+		},
+		{
+			"path" : "CTS/include/timewheel.h"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "/home/yupureki/project/ConcurrentTCPServer/build",
+		"source" : "/home/yupureki/project/ConcurrentTCPServer"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

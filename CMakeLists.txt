@@ -11,18 +11,11 @@ option(BUILD_TESTING "Build tests" ON)
 
 include_directories(${CMAKE_SOURCE_DIR}/CTS/include)
 
+add_subdirectory(Logger)
 add_subdirectory(CTS)
-#add_subdirectory(EchoServer)
+add_subdirectory(EchoServer)
 
 if(BUILD_TESTING)
     enable_testing()
-    #add_subdirectory(tests)
+    add_subdirectory(tests)
 endif()
-
-install(DIRECTORY CTS/include/ 
-        DESTINATION include/CTS
-        FILES_MATCHING PATTERN "*.hpp" PATTERN "*.h")
-
-#install(DIRECTORY EchoServer/include/ 
-        #DESTINATION include/EchoServer
-       # FILES_MATCHING PATTERN "*.hpp" PATTERN "*.h")
