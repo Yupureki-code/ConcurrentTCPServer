@@ -21,8 +21,6 @@ CTS/CMakeFiles/CTS_static.dir/src/ConcurrentTCPServer.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/socket.h
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/socket.hpp
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/timewheel.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/include/logstrategy.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/logstrategy.h
  /usr/include/alloca.h
  /usr/include/arpa/inet.h
  /usr/include/asm-generic/bitsperlong.h
@@ -345,6 +343,7 @@ CTS/CMakeFiles/CTS_static.dir/src/ConcurrentTCPServer.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
+ /usr/local/include/Logger/logstrategy.h
 
 CTS/CMakeFiles/CTS_static.dir/src/InetAddr.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/src/InetAddr.cpp
@@ -531,8 +530,6 @@ CTS/CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/logstrategy.hpp
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/poll.h
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/timewheel.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/include/logstrategy.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/logstrategy.h
  /usr/include/alloca.h
  /usr/include/arpa/inet.h
  /usr/include/asm-generic/bitsperlong.h
@@ -853,6 +850,7 @@ CTS/CMakeFiles/CTS_static.dir/src/ThreadLoopPool.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
+ /usr/local/include/Logger/logstrategy.h
 
 CTS/CMakeFiles/CTS_static.dir/src/acceptor.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/src/acceptor.cpp
@@ -868,8 +866,6 @@ CTS/CMakeFiles/CTS_static.dir/src/acceptor.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/poll.h
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/socket.h
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/timewheel.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/include/logstrategy.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/logstrategy.h
  /usr/include/alloca.h
  /usr/include/arpa/inet.h
  /usr/include/asm-generic/bitsperlong.h
@@ -1187,13 +1183,12 @@ CTS/CMakeFiles/CTS_static.dir/src/acceptor.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
+ /usr/local/include/Logger/logstrategy.h
 
 CTS/CMakeFiles/CTS_static.dir/src/buffer.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/src/buffer.cpp
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/buffer.h
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/logstrategy.hpp
- /home/yupureki/project/ConcurrentTCPServer/Logger/include/logstrategy.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/logstrategy.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
@@ -1441,6 +1436,7 @@ CTS/CMakeFiles/CTS_static.dir/src/buffer.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
+ /usr/local/include/Logger/logstrategy.h
 
 CTS/CMakeFiles/CTS_static.dir/src/channel.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/src/channel.cpp
@@ -1452,8 +1448,6 @@ CTS/CMakeFiles/CTS_static.dir/src/channel.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/lock.hpp
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/poll.h
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/timewheel.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/include/logstrategy.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/logstrategy.h
  /usr/include/alloca.h
  /usr/include/arpa/inet.h
  /usr/include/asm-generic/bitsperlong.h
@@ -1771,12 +1765,11 @@ CTS/CMakeFiles/CTS_static.dir/src/channel.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
+ /usr/local/include/Logger/logstrategy.h
 
 CTS/CMakeFiles/CTS_static.dir/src/comm.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/src/comm.cpp
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/comm.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/include/logstrategy.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/logstrategy.h
  /usr/include/alloca.h
  /usr/include/arpa/inet.h
  /usr/include/asm-generic/bitsperlong.h
@@ -2082,6 +2075,7 @@ CTS/CMakeFiles/CTS_static.dir/src/comm.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
+ /usr/local/include/Logger/logstrategy.h
 
 CTS/CMakeFiles/CTS_static.dir/src/cond.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/src/cond.cpp
@@ -2289,8 +2283,6 @@ CTS/CMakeFiles/CTS_static.dir/src/connection.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/socket.h
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/socket.hpp
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/timewheel.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/include/logstrategy.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/logstrategy.h
  /usr/include/alloca.h
  /usr/include/arpa/inet.h
  /usr/include/asm-generic/bitsperlong.h
@@ -2612,6 +2604,7 @@ CTS/CMakeFiles/CTS_static.dir/src/connection.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
+ /usr/local/include/Logger/logstrategy.h
 
 CTS/CMakeFiles/CTS_static.dir/src/eventloop.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/src/eventloop.cpp
@@ -2624,8 +2617,6 @@ CTS/CMakeFiles/CTS_static.dir/src/eventloop.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/logstrategy.hpp
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/poll.h
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/timewheel.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/include/logstrategy.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/logstrategy.h
  /usr/include/alloca.h
  /usr/include/arpa/inet.h
  /usr/include/asm-generic/bitsperlong.h
@@ -2943,6 +2934,7 @@ CTS/CMakeFiles/CTS_static.dir/src/eventloop.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
+ /usr/local/include/Logger/logstrategy.h
 
 CTS/CMakeFiles/CTS_static.dir/src/lock.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/src/lock.cpp
@@ -3019,8 +3011,6 @@ CTS/CMakeFiles/CTS_static.dir/src/poll.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/comm.h
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/comm.hpp
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/poll.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/include/logstrategy.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/logstrategy.h
  /usr/include/alloca.h
  /usr/include/arpa/inet.h
  /usr/include/asm-generic/bitsperlong.h
@@ -3326,6 +3316,7 @@ CTS/CMakeFiles/CTS_static.dir/src/poll.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
+ /usr/local/include/Logger/logstrategy.h
 
 CTS/CMakeFiles/CTS_static.dir/src/socket.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/src/socket.cpp
@@ -3333,8 +3324,6 @@ CTS/CMakeFiles/CTS_static.dir/src/socket.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/InetAddr.hpp
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/comm.h
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/socket.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/include/logstrategy.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/logstrategy.h
  /usr/include/alloca.h
  /usr/include/arpa/inet.h
  /usr/include/asm-generic/bitsperlong.h
@@ -3640,6 +3629,7 @@ CTS/CMakeFiles/CTS_static.dir/src/socket.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
+ /usr/local/include/Logger/logstrategy.h
 
 CTS/CMakeFiles/CTS_static.dir/src/timewheel.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/src/timewheel.cpp
@@ -3651,8 +3641,6 @@ CTS/CMakeFiles/CTS_static.dir/src/timewheel.cpp.o
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/lock.hpp
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/poll.h
  /home/yupureki/project/ConcurrentTCPServer/CTS/include/timewheel.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/include/logstrategy.h
- /home/yupureki/project/ConcurrentTCPServer/Logger/logstrategy.h
  /usr/include/alloca.h
  /usr/include/arpa/inet.h
  /usr/include/asm-generic/bitsperlong.h
@@ -3970,4 +3958,5 @@ CTS/CMakeFiles/CTS_static.dir/src/timewheel.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
+ /usr/local/include/Logger/logstrategy.h
 

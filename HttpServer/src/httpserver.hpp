@@ -8,12 +8,14 @@
 #include <chrono>
 #include <functional>
 #include <future>
+#include <cstdint>
 #include <string>
 #include <regex>
 #include <thread>
 
 #define DEFAULT_BASE_DIR "./wwwroot"
 #define DEFAULT_BUSINESS_TIMEOUT 3
+#define DEFAULT_REQUEST_TIMEOUT 2
 
 using namespace ns_log;
 
@@ -22,6 +24,12 @@ class HttpServer
 private:
     using handler = std::function<void(const HttpRequest&,HttpResponse&)>;
     using handlers = std::vector<std::pair<std::regex,handler>>;
+    struct HttpSession
+    {
+        HttpContext context;
+        uint64_t body_timeout_token = 0;
+    };
+    using Session = HttpSession;
 public:
     void HandlerError(const HttpRequest&,HttpResponse& rep, int status = 404)
     {
@@ -54,6 +62,12 @@ public:
         }
         HandlerTimeout(rep);
         return false;
+    }
+    void SendAndClose(const PtrConnection& conn, const HttpRequest& req, HttpResponse& rep)
+    {
+        std::string res = MakeResponse(req, rep);
+        conn->Send(res);
+        conn->ShutDown();
     }
     std::string MakeResponse(const HttpRequest& req,HttpResponse& rep)
     {
@@ -164,10 +178,11 @@ public:
     {
         logger(ns_log::INFO)<<"收到"<<conn->GetPeerAddr().get_string()<<"的请求";
         Context context_any = conn->GetContext();
-        HttpContext context;
-        HttpContext* context_ptr = std::any_cast<HttpContext>(&context_any);
-        if(context_ptr != nullptr)
-            context = *context_ptr;
+        Session session;
+        Session* session_ptr = std::any_cast<Session>(&context_any);
+        if(session_ptr != nullptr)
+            session = *session_ptr;
+        HttpContext& context = session.context;
         while(buffer.Size())
         {
             if(!context.PraseRequest(buffer))
@@ -177,11 +192,23 @@ public:
                     HttpRequest req = context.GetRequest();
                     HttpResponse rep(context.GetResponseStatus());
                     HandlerError(req, rep, context.GetResponseStatus());
-                    std::string res = MakeResponse(req, rep);
-                    conn->Send(res);
+                    SendAndClose(conn, req, rep);
                     context.Clear();
+                    session.body_timeout_token++;
+                    Context saved = session;
+                    conn->SetContext(saved);
+                    return;
                 }
-                Context saved = context;
+                if(context.IsBodyPending())
+                {
+                    session.body_timeout_token++;
+                    Context saved = session;
+                    conn->SetContext(saved);
+                    ArmBodyTimeout(conn, session.body_timeout_token);
+                    return;
+                }
+                session.context = context;
+                Context saved = session;
                 conn->SetContext(saved);
                 return;
             }
@@ -190,10 +217,10 @@ public:
             if(context.GetResponseStatus() >= 400)
             {
                 HandlerError(req, rep, context.GetResponseStatus());
-                std::string res = MakeResponse(req, rep);
-                conn->Send(res);
+                SendAndClose(conn, req, rep);
                 context.Clear();
-                Context saved = context;
+                session.body_timeout_token++;
+                Context saved = session;
                 conn->SetContext(saved);
                 return;
             }
@@ -202,27 +229,59 @@ public:
             conn->Send(res);
             if(rep.Close())
             {
+                conn->ShutDown();
                 context.Clear();
-                Context saved = context;
+                session.body_timeout_token++;
+                Context saved = session;
                 conn->SetContext(saved);
                 return;
             }
+            session.body_timeout_token++;
             context.Clear();
         }
 
-        Context saved = context;
-        conn->SetContext(saved);
+        session.context = context;
+        Context context_saved = session;
+        conn->SetContext(context_saved);
     }
     void OnConnected(const PtrConnection &conn)
     {
-        HttpContext context;
-        Context saved = context;
-        conn->SetContext(saved);
+        Session saved;
+        Context context_saved = saved;
+        conn->SetContext(context_saved);
+    }
+    void HandleBodyTimeout(const std::weak_ptr<Connection>& weak_conn, uint64_t token)
+    {
+        auto conn = weak_conn.lock();
+        if(!conn)
+            return;
+        Context context_any = conn->GetContext();
+        Session* session_ptr = std::any_cast<Session>(&context_any);
+        if(session_ptr == nullptr)
+            return;
+        if(session_ptr->body_timeout_token != token)
+            return;
+        if(!session_ptr->context.IsBodyPending())
+            return;
+        HttpRequest req = session_ptr->context.GetRequest();
+        HttpResponse rep(408);
+        rep.SetHeader("Connection", "close");
+        rep.SetHeader("Content-Type", "text/plain;charset=utf-8");
+        rep._body = "Request Timeout";
+        SendAndClose(conn, req, rep);
+    }
+    void ArmBodyTimeout(const PtrConnection& conn, uint64_t token)
+    {
+        std::weak_ptr<Connection> weak_conn = conn;
+        _server.AddTimeTask([this, weak_conn, token]() {
+            HandleBodyTimeout(weak_conn, token);
+        }, _request_timeout);
     }
 public:
-    HttpServer(int port,size_t thread_nums = 0,int business_timeout = DEFAULT_BUSINESS_TIMEOUT)
+    HttpServer(int port,size_t thread_nums = 0,int business_timeout = DEFAULT_BUSINESS_TIMEOUT,int request_timeout = DEFAULT_REQUEST_TIMEOUT)
     : _server(port,thread_nums)
     , _business_timeout(business_timeout)
+    , _request_timeout(request_timeout)
     {
         _server.SetConnectedCallBack(std::bind(&HttpServer::OnConnected, this, std::placeholders::_1));
         _server.SetMessageCallBack(std::bind(&HttpServer::MessageHandler, this, std::placeholders::_1, std::placeholders::_2));
@@ -262,5 +321,6 @@ private:
     handlers _delete_routes;
     std::string _base_dir;
     int _business_timeout;
+    int _request_timeout;
     CTS _server;
 };

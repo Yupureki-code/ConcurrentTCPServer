@@ -1,0 +1,83 @@
+Start testing: Apr 16 15:05 UTC
+----------------------------------------------------------
+1/1 Testing: httpserver_cpp_suite
+1/1 Test: httpserver_cpp_suite
+Command: "/usr/bin/cmake" "--build" "/home/yupureki/project/ConcurrentTCPServer/build" "--target" "httpserver_run_cpp"
+Directory: /home/yupureki/project/ConcurrentTCPServer/build/HttpServer/test
+"httpserver_cpp_suite" start time: Apr 16 15:05 UTC
+Output:
+----------------------------------------------------------
+gmake[1]: 进入目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[2]: 进入目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[3]: 进入目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[4]: 进入目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[4]: 离开目录“/home/yupureki/project/ConcurrentTCPServer/build”
+[  5%] Built target Logger_static
+gmake[4]: 进入目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[4]: 离开目录“/home/yupureki/project/ConcurrentTCPServer/build”
+[ 47%] Built target CTS_static
+gmake[4]: 进入目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[4]: 离开目录“/home/yupureki/project/ConcurrentTCPServer/build”
+[ 52%] Built target httpserver_timeout_connection_test
+gmake[4]: 进入目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[4]: 离开目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[4]: 进入目录“/home/yupureki/project/ConcurrentTCPServer/build”
+[ 55%] [32mBuilding CXX object HttpServer/test/CMakeFiles/httpserver_test_server.dir/test.cpp.o[0m
+[ 58%] [32m[1mLinking CXX executable httpserver_test_server[0m
+gmake[4]: 离开目录“/home/yupureki/project/ConcurrentTCPServer/build”
+[ 58%] Built target httpserver_test_server
+gmake[4]: 进入目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[4]: 离开目录“/home/yupureki/project/ConcurrentTCPServer/build”
+[ 63%] Built target httpserver_bad_request_test
+gmake[4]: 进入目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[4]: 离开目录“/home/yupureki/project/ConcurrentTCPServer/build”
+[ 69%] Built target httpserver_business_timeout_test
+gmake[4]: 进入目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[4]: 离开目录“/home/yupureki/project/ConcurrentTCPServer/build”
+[ 75%] Built target httpserver_large_file_test
+gmake[4]: 进入目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[4]: 离开目录“/home/yupureki/project/ConcurrentTCPServer/build”
+[ 80%] Built target httpserver_long_connection_test
+gmake[4]: 进入目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[4]: 离开目录“/home/yupureki/project/ConcurrentTCPServer/build”
+[ 86%] Built target httpserver_parallel_requests_test
+gmake[4]: 进入目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[4]: 离开目录“/home/yupureki/project/ConcurrentTCPServer/build”
+[ 91%] Built target httpserver_pressure_test
+gmake[4]: 进入目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[4]: 离开目录“/home/yupureki/project/ConcurrentTCPServer/build”
+[ 97%] Built target httpserver_request_timeout_test
+gmake[4]: 进入目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[4]: 离开目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[4]: 进入目录“/home/yupureki/project/ConcurrentTCPServer/build”
+[100%] [34m[1mRun HttpServer C++ tests[0m
+[RUN] ./httpserver_bad_request_test
+[PASS] bad request
+[RUN] ./httpserver_business_timeout_test
+[PASS] business timeout
+[RUN] ./httpserver_large_file_test
+[PASS] large file
+[RUN] ./httpserver_long_connection_test
+[PASS] long connection
+[RUN] ./httpserver_parallel_requests_test
+[PASS] parallel requests
+[RUN] ./httpserver_pressure_test
+[PASS] pressure
+[RUN] ./httpserver_request_timeout_test
+[PASS] request timeout
+[RUN] ./httpserver_timeout_connection_test
+[PASS] timeout connection
+gmake[4]: 离开目录“/home/yupureki/project/ConcurrentTCPServer/build”
+[100%] Built target httpserver_run_cpp
+gmake[3]: 离开目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[2]: 离开目录“/home/yupureki/project/ConcurrentTCPServer/build”
+gmake[1]: 离开目录“/home/yupureki/project/ConcurrentTCPServer/build”
+<end of output>
+Test time =  18.24 sec
+----------------------------------------------------------
+Test Passed.
+"httpserver_cpp_suite" end time: Apr 16 15:06 UTC
+"httpserver_cpp_suite" time elapsed: 00:00:18
+----------------------------------------------------------
+
+End testing: Apr 16 15:06 UTC

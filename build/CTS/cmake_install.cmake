@@ -68,6 +68,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
       )
     if(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
+      file(RPATH_CHANGE
+           FILE "${file}"
+           OLD_RPATH "/home/yupureki/project/ConcurrentTCPServer/Logger/output/lib:"
+           NEW_RPATH "")
       if(CMAKE_INSTALL_DO_STRIP)
         execute_process(COMMAND "/usr/bin/strip" "${file}")
       endif()
@@ -81,5 +85,35 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/CTS" TYPE DIRECTORY FILES "/home/yupureki/project/ConcurrentTCPServer/CTS/output/include/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/[^/]*\\.hpp$")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/CTS/CTSTargets.cmake")
+    file(DIFFERENT _cmake_export_file_changed FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/CTS/CTSTargets.cmake"
+         "/home/yupureki/project/ConcurrentTCPServer/build/CTS/CMakeFiles/Export/2d86607f3cbc10975d370e30077d4461/CTSTargets.cmake")
+    if(_cmake_export_file_changed)
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/CTS/CTSTargets-*.cmake")
+      if(_cmake_old_config_files)
+        string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/CTS/CTSTargets.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        unset(_cmake_old_config_files_text)
+        file(REMOVE ${_cmake_old_config_files})
+      endif()
+      unset(_cmake_old_config_files)
+    endif()
+    unset(_cmake_export_file_changed)
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/CTS" TYPE FILE FILES "/home/yupureki/project/ConcurrentTCPServer/build/CTS/CMakeFiles/Export/2d86607f3cbc10975d370e30077d4461/CTSTargets.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/CTS" TYPE FILE FILES "/home/yupureki/project/ConcurrentTCPServer/build/CTS/CMakeFiles/Export/2d86607f3cbc10975d370e30077d4461/CTSTargets-noconfig.cmake")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/CTS" TYPE FILE FILES
+    "/home/yupureki/project/ConcurrentTCPServer/build/CTS/CTSConfig.cmake"
+    "/home/yupureki/project/ConcurrentTCPServer/build/CTS/CTSConfigVersion.cmake"
+    )
 endif()
 

@@ -1,0 +1,136 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"CTS/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 58,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 67,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 84,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"/home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.a"
+			],
+			"targetId" : "CTS_static::@d840c3cc27b6691a2c57",
+			"targetIndex" : 1,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"/home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.so.1.0.0",
+				"/home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.so.1"
+			],
+			"targetId" : "CTS_shared::@d840c3cc27b6691a2c57",
+			"targetIndex" : 0,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"/home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.so"
+			],
+			"targetId" : "CTS_shared::@d840c3cc27b6691a2c57",
+			"targetIndex" : 0,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/CTS",
+			"paths" : 
+			[
+				{
+					"from" : "CTS/output/include",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/CTS",
+			"exportName" : "CTSTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "CTS_static::@d840c3cc27b6691a2c57",
+					"index" : 1
+				},
+				{
+					"id" : "CTS_shared::@d840c3cc27b6691a2c57",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"CTS/CMakeFiles/Export/2d86607f3cbc10975d370e30077d4461/CTSTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/CTS",
+			"paths" : 
+			[
+				"build/CTS/CTSConfig.cmake",
+				"build/CTS/CTSConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "CTS",
+		"source" : "CTS"
+	}
+}

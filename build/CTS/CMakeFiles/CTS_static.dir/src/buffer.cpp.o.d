@@ -121,10 +121,8 @@ CTS/CMakeFiles/CTS_static.dir/src/buffer.cpp.o: \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
  /home/yupureki/project/ConcurrentTCPServer/CTS/src/../include/logstrategy.hpp \
- /home/yupureki/project/ConcurrentTCPServer/Logger/logstrategy.h \
- /home/yupureki/project/ConcurrentTCPServer/Logger/include/logstrategy.h \
- /usr/include/c++/13/ctime /usr/include/time.h \
- /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/local/include/Logger/logstrategy.h /usr/include/c++/13/ctime \
+ /usr/include/time.h /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \

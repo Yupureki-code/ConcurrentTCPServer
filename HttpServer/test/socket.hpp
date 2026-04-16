@@ -121,7 +121,7 @@ public:
     }
     int Send(const std::string &out) override
     {
-        // logger(LogLevel::INFO)<<"send "<<std::to_string(_sockfd)<<" "<<out;
+        std::cout<<"send:"<<out;
         int n = send(_sockfd, out.c_str(), out.size(), 0);
         return n;
         // logger(LogLevel::INFO)<<"success";

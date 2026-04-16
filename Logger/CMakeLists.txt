@@ -1,3 +1,5 @@
+include(CMakePackageConfigHelpers)
+
 file(GLOB LOGGER_SRC "src/*.cpp")
 
 file(GLOB LOGGER_PUBLIC_HEADERS
@@ -15,11 +17,20 @@ endforeach()
 add_library(Logger_static STATIC ${LOGGER_SRC})
 add_library(Logger_shared SHARED ${LOGGER_SRC})
 
+add_library(Logger::Logger_static ALIAS Logger_static)
+add_library(Logger::Logger_shared ALIAS Logger_shared)
+
 target_include_directories(Logger_static PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<BUILD_INTERFACE:${LOGGER_PUBLIC_INCLUDE_OUTPUT_DIR}>
+    $<INSTALL_INTERFACE:include>
 )
 target_include_directories(Logger_shared PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<BUILD_INTERFACE:${LOGGER_PUBLIC_INCLUDE_OUTPUT_DIR}>
+    $<INSTALL_INTERFACE:include>
 )
 
 target_link_libraries(Logger_static PUBLIC pthread)
@@ -43,9 +54,33 @@ set_target_properties(Logger_shared PROPERTIES
 )
 
 install(TARGETS Logger_static Logger_shared
+    EXPORT LoggerTargets
         LIBRARY DESTINATION lib
         ARCHIVE DESTINATION lib)
 
 install(DIRECTORY ${LOGGER_PUBLIC_INCLUDE_OUTPUT_DIR}/
         DESTINATION include/Logger
         FILES_MATCHING PATTERN "*.h" PATTERN "*.hpp")
+
+install(EXPORT LoggerTargets
+    FILE LoggerTargets.cmake
+    NAMESPACE Logger::
+    DESTINATION lib/cmake/Logger)
+
+write_basic_package_version_file(
+    ${CMAKE_CURRENT_BINARY_DIR}/LoggerConfigVersion.cmake
+    VERSION 1.0.0
+    COMPATIBILITY SameMajorVersion
+)
+
+configure_package_config_file(
+    ${CMAKE_CURRENT_SOURCE_DIR}/LoggerConfig.cmake.in
+    ${CMAKE_CURRENT_BINARY_DIR}/LoggerConfig.cmake
+    INSTALL_DESTINATION lib/cmake/Logger
+)
+
+install(FILES
+    ${CMAKE_CURRENT_BINARY_DIR}/LoggerConfig.cmake
+    ${CMAKE_CURRENT_BINARY_DIR}/LoggerConfigVersion.cmake
+    DESTINATION lib/cmake/Logger
+)

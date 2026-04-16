@@ -1,0 +1,6 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+find_dependency(Logger CONFIG)
+
+include("${CMAKE_CURRENT_LIST_DIR}/CTSTargets.cmake")

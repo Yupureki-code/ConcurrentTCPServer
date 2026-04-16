@@ -300,6 +300,7 @@ CTS_shared_EXTERNAL_OBJECTS =
 /home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.so.1.0.0: CTS/CMakeFiles/CTS_shared.dir/src/socket.cpp.o
 /home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.so.1.0.0: CTS/CMakeFiles/CTS_shared.dir/src/timewheel.cpp.o
 /home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.so.1.0.0: CTS/CMakeFiles/CTS_shared.dir/build.make
+/home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.so.1.0.0: /home/yupureki/project/ConcurrentTCPServer/Logger/output/lib/libLogger.so.1.0.0
 /home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.so.1.0.0: CTS/CMakeFiles/CTS_shared.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/yupureki/project/ConcurrentTCPServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX shared library /home/yupureki/project/ConcurrentTCPServer/CTS/output/lib/libCTS.so"
 	cd /home/yupureki/project/ConcurrentTCPServer/build/CTS && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CTS_shared.dir/link.txt --verbose=$(VERBOSE)

@@ -8,6 +8,7 @@
 class EventLoop;
 class Socket;
 
+/// Acceptor类用于监听指定端口的连接请求，并在有新连接时调用回调函数进行处理
 class Acceptor
 {
 private:
@@ -19,8 +20,8 @@ public:
 	~Acceptor();
 
 private:
-	Socket* _socket;
-	Channel _channel;
-	EventLoop* _loop;
-	AcceptCallBack _accept_cb;
+	Socket* _socket;//用于监听的套接字
+	Channel _channel;//用于监听套接字的事件
+	EventLoop* _loop;//事件循环
+	AcceptCallBack _accept_cb;//新连接到来时的回调函数
 };

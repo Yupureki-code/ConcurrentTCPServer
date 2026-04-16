@@ -108,14 +108,20 @@ public:
         }
         std::vector<std::string> headers;
         Util::Split(line, "\r\n", headers);
-        const std::string sep = ": ";
+        auto trim = [](std::string value) {
+            while(!value.empty() && (value.front() == ' ' || value.front() == '\t'))
+                value.erase(value.begin());
+            while(!value.empty() && (value.back() == ' ' || value.back() == '\t'))
+                value.pop_back();
+            return value;
+        };
         for(auto & it : headers)
         {
-            size_t pos = it.find(sep);
+            size_t pos = it.find(':');
             if(pos != std::string::npos)            
             {
-                std::string key = it.substr(0, pos);
-                std::string value = it.substr(pos + sep.size());
+                std::string key = trim(it.substr(0, pos));
+                std::string value = trim(it.substr(pos + 1));
                 if(key.empty() || value.empty())
                 {
                     _resp_status = 400;
@@ -137,7 +143,13 @@ public:
     }
     bool PraseBody(Buffer& buffer)
     {
-        size_t content_length = _req.ContentLength();
+        size_t content_length = 0;
+        if(!_req.TryContentLength(content_length))
+        {
+            _resp_status = 400;
+            _recv_status = RECV_HTTP_ERROR;
+            return false;
+        }
         if(buffer.Size() < content_length)
             return false;
         std::string body = buffer.Read(content_length);
@@ -170,6 +182,10 @@ public:
     int GetResponseStatus()const
     {
         return _resp_status;
+    }
+    bool IsBodyPending()const
+    {
+        return _recv_status == RECV_HTTP_BODY;
     }
 private:
     int _resp_status;

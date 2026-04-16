@@ -1,0 +1,96 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"HttpServer/test/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 69,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "httpserver_test_server::@d1b7f9f7793f9df20f33"
+		},
+		{
+			"id" : "httpserver_bad_request_test::@d1b7f9f7793f9df20f33"
+		},
+		{
+			"id" : "httpserver_business_timeout_test::@d1b7f9f7793f9df20f33"
+		},
+		{
+			"id" : "httpserver_large_file_test::@d1b7f9f7793f9df20f33"
+		},
+		{
+			"id" : "httpserver_long_connection_test::@d1b7f9f7793f9df20f33"
+		},
+		{
+			"id" : "httpserver_parallel_requests_test::@d1b7f9f7793f9df20f33"
+		},
+		{
+			"id" : "httpserver_pressure_test::@d1b7f9f7793f9df20f33"
+		},
+		{
+			"id" : "httpserver_request_timeout_test::@d1b7f9f7793f9df20f33"
+		},
+		{
+			"id" : "httpserver_timeout_connection_test::@d1b7f9f7793f9df20f33"
+		}
+	],
+	"id" : "httpserver_run_cpp::@d1b7f9f7793f9df20f33",
+	"name" : "httpserver_run_cpp",
+	"paths" : 
+	{
+		"build" : "HttpServer/test",
+		"source" : "HttpServer/test"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/HttpServer/test/CMakeFiles/httpserver_run_cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/HttpServer/test/CMakeFiles/httpserver_run_cpp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

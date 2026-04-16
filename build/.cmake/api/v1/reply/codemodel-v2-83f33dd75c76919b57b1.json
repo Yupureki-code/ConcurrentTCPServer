@@ -1,0 +1,228 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28.3"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Logger",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Logger-8fcc46f4d169b989cffd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28.3"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Logger",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				},
+				{
+					"build" : "CTS",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-CTS-3d334b1919ce0767e032.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28.3"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "CTS",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "HttpServer/test",
+					"jsonFile" : "directory-HttpServer.test-0c8898be2e9840e3ab75.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28.3"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "HttpServer/test",
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "ConcurrentTCPServer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "CTS_shared::@d840c3cc27b6691a2c57",
+					"jsonFile" : "target-CTS_shared-9dc80289ccc8d26db4bd.json",
+					"name" : "CTS_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "CTS_static::@d840c3cc27b6691a2c57",
+					"jsonFile" : "target-CTS_static-dc88d60ed15ac3b9b5ec.json",
+					"name" : "CTS_static",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Logger_shared::@8307d85a046eb72c8a29",
+					"jsonFile" : "target-Logger_shared-431a1d264be09a787250.json",
+					"name" : "Logger_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Logger_static::@8307d85a046eb72c8a29",
+					"jsonFile" : "target-Logger_static-af90bf62b758c1379253.json",
+					"name" : "Logger_static",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "httpserver_bad_request_test::@d1b7f9f7793f9df20f33",
+					"jsonFile" : "target-httpserver_bad_request_test-2ebfd7320e18b3c0728f.json",
+					"name" : "httpserver_bad_request_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "httpserver_business_timeout_test::@d1b7f9f7793f9df20f33",
+					"jsonFile" : "target-httpserver_business_timeout_test-f3ee7dc93eecbb25a5bd.json",
+					"name" : "httpserver_business_timeout_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "httpserver_large_file_test::@d1b7f9f7793f9df20f33",
+					"jsonFile" : "target-httpserver_large_file_test-27662d9c44e8d43f0e8e.json",
+					"name" : "httpserver_large_file_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "httpserver_long_connection_test::@d1b7f9f7793f9df20f33",
+					"jsonFile" : "target-httpserver_long_connection_test-7727097375475a6ea861.json",
+					"name" : "httpserver_long_connection_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "httpserver_parallel_requests_test::@d1b7f9f7793f9df20f33",
+					"jsonFile" : "target-httpserver_parallel_requests_test-dbc884770e620602972c.json",
+					"name" : "httpserver_parallel_requests_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "httpserver_pressure_test::@d1b7f9f7793f9df20f33",
+					"jsonFile" : "target-httpserver_pressure_test-39d3edd04bbada54b09d.json",
+					"name" : "httpserver_pressure_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "httpserver_request_timeout_test::@d1b7f9f7793f9df20f33",
+					"jsonFile" : "target-httpserver_request_timeout_test-94d5d2816600716a160c.json",
+					"name" : "httpserver_request_timeout_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "httpserver_run_cpp::@d1b7f9f7793f9df20f33",
+					"jsonFile" : "target-httpserver_run_cpp-fcbdeaf749ffdfbb4e47.json",
+					"name" : "httpserver_run_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "httpserver_test_server::@d1b7f9f7793f9df20f33",
+					"jsonFile" : "target-httpserver_test_server-b5b5cb1b93601939ee90.json",
+					"name" : "httpserver_test_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "httpserver_timeout_connection_test::@d1b7f9f7793f9df20f33",
+					"jsonFile" : "target-httpserver_timeout_connection_test-a2edffa5125cc309e114.json",
+					"name" : "httpserver_timeout_connection_test",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yupureki/project/ConcurrentTCPServer/build",
+		"source" : "/home/yupureki/project/ConcurrentTCPServer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

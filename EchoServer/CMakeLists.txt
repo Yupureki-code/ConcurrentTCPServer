@@ -68,11 +68,3 @@ add_custom_command(TARGET EchoServer_shared POST_BUILD
     ${CMAKE_CURRENT_SOURCE_DIR}/include
     ${CMAKE_CURRENT_SOURCE_DIR}/output/include
 )
-
-install(TARGETS EchoServer_static EchoServer_shared
-        LIBRARY DESTINATION lib
-        ARCHIVE DESTINATION lib)
-
-install(DIRECTORY include/ 
-        DESTINATION include/EchoServer
-        FILES_MATCHING PATTERN "*.hpp" PATTERN "*.h")

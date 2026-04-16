@@ -19,7 +19,7 @@
 #define CONV(x) ((struct sockaddr*)(&x))
 #define DEFAULT_BACKLOG 8
 #define MAXNUM 1024
-#define DEFAULT_PORT 8080
+#define DEFAULT_PORT 18080
 #define DEFAULT_SOCKFD -1
 #define DEFAULT_IP "127.0.0.1"
 

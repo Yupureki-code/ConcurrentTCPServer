@@ -22,6 +22,26 @@ public:
         auto it = _headers.find(key);
         return it != _headers.end();
     }
+    bool TryContentLength(size_t& length) const
+    {
+        length = 0;
+        if(!HasHeader("Content-Length"))
+            return true;
+        const std::string value = GetHeader("Content-Length");
+        try
+        {
+            size_t pos = 0;
+            unsigned long long parsed = std::stoull(value, &pos);
+            if(pos != value.size())
+                return false;
+            length = static_cast<size_t>(parsed);
+            return true;
+        }
+        catch(...)
+        {
+            return false;
+        }
+    }
     void SetParam(const std::string& key,const std::string& value)
     {
         _params[key] = value;
@@ -40,9 +60,9 @@ public:
     }
     size_t ContentLength()const
     {
-        if(!HasHeader("Content-Length"))
-            return 0;
-        return std::stoul(GetHeader("Content-Length"));
+        size_t length = 0;
+        TryContentLength(length);
+        return length;
     }
     bool IsKeepAlive()const
     {

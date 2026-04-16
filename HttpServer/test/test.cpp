@@ -3,11 +3,19 @@
 #include <chrono>
 #include <thread>
 
-const std::string HTML_PATH = "../src/wwwroot";
+#ifndef HTTP_SERVER_TEST_PORT
+#define HTTP_SERVER_TEST_PORT 18080
+#endif
+
+#ifndef HTTP_SERVER_WWWROOT
+#define HTTP_SERVER_WWWROOT "../src/wwwroot"
+#endif
+
+const std::string HTML_PATH = HTTP_SERVER_WWWROOT;
 
 int main()
 {
-    HttpServer server(8080, 8, 3);
+    HttpServer server(HTTP_SERVER_TEST_PORT, 8, 3);
     server.EnableInactiveRelease(5);
     server.SetBaseDir(HTML_PATH);
     server.Get("/", [](const HttpRequest& req,HttpResponse& rep){

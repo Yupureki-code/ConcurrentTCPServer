@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parent
 SERVER_BIN = ROOT / "test"
 WWWROOT = ROOT.parent / "src" / "wwwroot"
 HOST = "127.0.0.1"
-PORT = 8080
+PORT = 18080
 IDLE_TIMEOUT = 10
 BUSINESS_TIMEOUT = 3
 

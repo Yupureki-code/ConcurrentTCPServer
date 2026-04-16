@@ -43,7 +43,6 @@ void Buffer::Write(const std::string& s)
     }
     std::copy(s.begin(), s.end(), _buffer.begin() + _write_index);
     _write_index += s.size();
-    logger(ns_log::INFO) << "写入Buffer:" << s;
 }
 
 std::string Buffer::GetLine(const std::string& sep, bool keep_sep)

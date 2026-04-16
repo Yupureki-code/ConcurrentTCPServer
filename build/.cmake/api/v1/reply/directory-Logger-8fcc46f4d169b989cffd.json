@@ -1,0 +1,136 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"Logger/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 56,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 61,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 82,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"/home/yupureki/project/ConcurrentTCPServer/Logger/output/lib/libLogger.a"
+			],
+			"targetId" : "Logger_static::@8307d85a046eb72c8a29",
+			"targetIndex" : 3,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"/home/yupureki/project/ConcurrentTCPServer/Logger/output/lib/libLogger.so.1.0.0",
+				"/home/yupureki/project/ConcurrentTCPServer/Logger/output/lib/libLogger.so.1"
+			],
+			"targetId" : "Logger_shared::@8307d85a046eb72c8a29",
+			"targetIndex" : 2,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"/home/yupureki/project/ConcurrentTCPServer/Logger/output/lib/libLogger.so"
+			],
+			"targetId" : "Logger_shared::@8307d85a046eb72c8a29",
+			"targetIndex" : 2,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/Logger",
+			"paths" : 
+			[
+				{
+					"from" : "Logger/output/include",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Logger",
+			"exportName" : "LoggerTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "Logger_static::@8307d85a046eb72c8a29",
+					"index" : 3
+				},
+				{
+					"id" : "Logger_shared::@8307d85a046eb72c8a29",
+					"index" : 2
+				}
+			],
+			"paths" : 
+			[
+				"Logger/CMakeFiles/Export/329d1623e4abba3880836282ef655259/LoggerTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Logger",
+			"paths" : 
+			[
+				"build/Logger/LoggerConfig.cmake",
+				"build/Logger/LoggerConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Logger",
+		"source" : "Logger"
+	}
+}

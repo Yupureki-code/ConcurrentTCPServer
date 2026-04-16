@@ -23,7 +23,14 @@
 namespace http_test
 {
 inline constexpr const char* kHost = "127.0.0.1";
-inline constexpr uint16_t kPort = 8080;
+#ifndef HTTP_SERVER_TEST_PORT
+#define HTTP_SERVER_TEST_PORT 18080
+#endif
+inline constexpr uint16_t kPort = HTTP_SERVER_TEST_PORT;
+
+#ifndef HTTP_SERVER_WWWROOT
+#define HTTP_SERVER_WWWROOT "../src/wwwroot"
+#endif
 
 struct Response
 {
@@ -207,7 +214,7 @@ inline std::string bad_request()
 
 inline std::filesystem::path large_fixture_path()
 {
-    return std::filesystem::path("..") / "src" / "wwwroot" / "large.bin";
+    return std::filesystem::path(HTTP_SERVER_WWWROOT) / "large.bin";
 }
 
 inline void create_large_fixture(std::size_t bytes = 2 * 1024 * 1024)

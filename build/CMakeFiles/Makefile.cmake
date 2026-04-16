@@ -9,6 +9,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/yupureki/project/ConcurrentTCPServer/CMakeLists.txt"
   "/home/yupureki/project/ConcurrentTCPServer/CTS/CMakeLists.txt"
+  "/home/yupureki/project/ConcurrentTCPServer/CTS/CTSConfig.cmake.in"
   "/home/yupureki/project/ConcurrentTCPServer/CTS/include/CTS.h"
   "/home/yupureki/project/ConcurrentTCPServer/CTS/include/ConcurrentTCPServer.hpp"
   "/home/yupureki/project/ConcurrentTCPServer/CTS/include/InetAddr.h"
@@ -33,13 +34,20 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/yupureki/project/ConcurrentTCPServer/CTS/include/socket.h"
   "/home/yupureki/project/ConcurrentTCPServer/CTS/include/socket.hpp"
   "/home/yupureki/project/ConcurrentTCPServer/CTS/include/timewheel.h"
+  "/home/yupureki/project/ConcurrentTCPServer/HttpServer/test/CMakeLists.txt"
+  "/home/yupureki/project/ConcurrentTCPServer/Logger/CMakeLists.txt"
+  "/home/yupureki/project/ConcurrentTCPServer/Logger/LoggerConfig.cmake.in"
+  "/home/yupureki/project/ConcurrentTCPServer/Logger/include/logstrategy.h"
+  "/home/yupureki/project/ConcurrentTCPServer/Logger/include/logstrategy.hpp"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
+  "/usr/share/cmake-3.28/Modules/BasicConfigVersion-SameMajorVersion.cmake.in"
   "/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake"
+  "/usr/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
@@ -50,6 +58,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake"
   "/usr/share/cmake-3.28/Modules/Platform/Linux.cmake"
   "/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake"
+  "/usr/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake"
   )
 
 # The corresponding makefile is:
@@ -61,6 +70,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "/home/yupureki/project/ConcurrentTCPServer/Logger/output/include/logstrategy.h"
+  "/home/yupureki/project/ConcurrentTCPServer/Logger/output/include/logstrategy.hpp"
+  "Logger/LoggerConfigVersion.cmake"
+  "Logger/LoggerConfig.cmake"
+  "Logger/CMakeFiles/CMakeDirectoryInformation.cmake"
   "/home/yupureki/project/ConcurrentTCPServer/CTS/output/include/CTS.h"
   "/home/yupureki/project/ConcurrentTCPServer/CTS/output/include/ConcurrentTCPServer.hpp"
   "/home/yupureki/project/ConcurrentTCPServer/CTS/output/include/InetAddr.h"
@@ -85,11 +99,26 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "/home/yupureki/project/ConcurrentTCPServer/CTS/output/include/socket.h"
   "/home/yupureki/project/ConcurrentTCPServer/CTS/output/include/socket.hpp"
   "/home/yupureki/project/ConcurrentTCPServer/CTS/output/include/timewheel.h"
+  "CTS/CTSConfigVersion.cmake"
+  "CTS/CTSConfig.cmake"
   "CTS/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "HttpServer/test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "Logger/CMakeFiles/Logger_static.dir/DependInfo.cmake"
+  "Logger/CMakeFiles/Logger_shared.dir/DependInfo.cmake"
   "CTS/CMakeFiles/CTS_static.dir/DependInfo.cmake"
   "CTS/CMakeFiles/CTS_shared.dir/DependInfo.cmake"
+  "HttpServer/test/CMakeFiles/httpserver_test_server.dir/DependInfo.cmake"
+  "HttpServer/test/CMakeFiles/httpserver_bad_request_test.dir/DependInfo.cmake"
+  "HttpServer/test/CMakeFiles/httpserver_business_timeout_test.dir/DependInfo.cmake"
+  "HttpServer/test/CMakeFiles/httpserver_large_file_test.dir/DependInfo.cmake"
+  "HttpServer/test/CMakeFiles/httpserver_long_connection_test.dir/DependInfo.cmake"
+  "HttpServer/test/CMakeFiles/httpserver_parallel_requests_test.dir/DependInfo.cmake"
+  "HttpServer/test/CMakeFiles/httpserver_pressure_test.dir/DependInfo.cmake"
+  "HttpServer/test/CMakeFiles/httpserver_request_timeout_test.dir/DependInfo.cmake"
+  "HttpServer/test/CMakeFiles/httpserver_timeout_connection_test.dir/DependInfo.cmake"
+  "HttpServer/test/CMakeFiles/httpserver_run_cpp.dir/DependInfo.cmake"
   )

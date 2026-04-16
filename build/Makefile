@@ -172,6 +172,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Logger_static
+
+# Build rule for target.
+Logger_static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Logger_static
+.PHONY : Logger_static
+
+# fast build rule for target.
+Logger_static/fast:
+	$(MAKE) $(MAKESILENT) -f Logger/CMakeFiles/Logger_static.dir/build.make Logger/CMakeFiles/Logger_static.dir/build
+.PHONY : Logger_static/fast
+
+#=============================================================================
+# Target rules for targets named Logger_shared
+
+# Build rule for target.
+Logger_shared: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Logger_shared
+.PHONY : Logger_shared
+
+# fast build rule for target.
+Logger_shared/fast:
+	$(MAKE) $(MAKESILENT) -f Logger/CMakeFiles/Logger_shared.dir/build.make Logger/CMakeFiles/Logger_shared.dir/build
+.PHONY : Logger_shared/fast
+
+#=============================================================================
 # Target rules for targets named CTS_static
 
 # Build rule for target.
@@ -197,6 +223,136 @@ CTS_shared/fast:
 	$(MAKE) $(MAKESILENT) -f CTS/CMakeFiles/CTS_shared.dir/build.make CTS/CMakeFiles/CTS_shared.dir/build
 .PHONY : CTS_shared/fast
 
+#=============================================================================
+# Target rules for targets named httpserver_test_server
+
+# Build rule for target.
+httpserver_test_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 httpserver_test_server
+.PHONY : httpserver_test_server
+
+# fast build rule for target.
+httpserver_test_server/fast:
+	$(MAKE) $(MAKESILENT) -f HttpServer/test/CMakeFiles/httpserver_test_server.dir/build.make HttpServer/test/CMakeFiles/httpserver_test_server.dir/build
+.PHONY : httpserver_test_server/fast
+
+#=============================================================================
+# Target rules for targets named httpserver_bad_request_test
+
+# Build rule for target.
+httpserver_bad_request_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 httpserver_bad_request_test
+.PHONY : httpserver_bad_request_test
+
+# fast build rule for target.
+httpserver_bad_request_test/fast:
+	$(MAKE) $(MAKESILENT) -f HttpServer/test/CMakeFiles/httpserver_bad_request_test.dir/build.make HttpServer/test/CMakeFiles/httpserver_bad_request_test.dir/build
+.PHONY : httpserver_bad_request_test/fast
+
+#=============================================================================
+# Target rules for targets named httpserver_business_timeout_test
+
+# Build rule for target.
+httpserver_business_timeout_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 httpserver_business_timeout_test
+.PHONY : httpserver_business_timeout_test
+
+# fast build rule for target.
+httpserver_business_timeout_test/fast:
+	$(MAKE) $(MAKESILENT) -f HttpServer/test/CMakeFiles/httpserver_business_timeout_test.dir/build.make HttpServer/test/CMakeFiles/httpserver_business_timeout_test.dir/build
+.PHONY : httpserver_business_timeout_test/fast
+
+#=============================================================================
+# Target rules for targets named httpserver_large_file_test
+
+# Build rule for target.
+httpserver_large_file_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 httpserver_large_file_test
+.PHONY : httpserver_large_file_test
+
+# fast build rule for target.
+httpserver_large_file_test/fast:
+	$(MAKE) $(MAKESILENT) -f HttpServer/test/CMakeFiles/httpserver_large_file_test.dir/build.make HttpServer/test/CMakeFiles/httpserver_large_file_test.dir/build
+.PHONY : httpserver_large_file_test/fast
+
+#=============================================================================
+# Target rules for targets named httpserver_long_connection_test
+
+# Build rule for target.
+httpserver_long_connection_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 httpserver_long_connection_test
+.PHONY : httpserver_long_connection_test
+
+# fast build rule for target.
+httpserver_long_connection_test/fast:
+	$(MAKE) $(MAKESILENT) -f HttpServer/test/CMakeFiles/httpserver_long_connection_test.dir/build.make HttpServer/test/CMakeFiles/httpserver_long_connection_test.dir/build
+.PHONY : httpserver_long_connection_test/fast
+
+#=============================================================================
+# Target rules for targets named httpserver_parallel_requests_test
+
+# Build rule for target.
+httpserver_parallel_requests_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 httpserver_parallel_requests_test
+.PHONY : httpserver_parallel_requests_test
+
+# fast build rule for target.
+httpserver_parallel_requests_test/fast:
+	$(MAKE) $(MAKESILENT) -f HttpServer/test/CMakeFiles/httpserver_parallel_requests_test.dir/build.make HttpServer/test/CMakeFiles/httpserver_parallel_requests_test.dir/build
+.PHONY : httpserver_parallel_requests_test/fast
+
+#=============================================================================
+# Target rules for targets named httpserver_pressure_test
+
+# Build rule for target.
+httpserver_pressure_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 httpserver_pressure_test
+.PHONY : httpserver_pressure_test
+
+# fast build rule for target.
+httpserver_pressure_test/fast:
+	$(MAKE) $(MAKESILENT) -f HttpServer/test/CMakeFiles/httpserver_pressure_test.dir/build.make HttpServer/test/CMakeFiles/httpserver_pressure_test.dir/build
+.PHONY : httpserver_pressure_test/fast
+
+#=============================================================================
+# Target rules for targets named httpserver_request_timeout_test
+
+# Build rule for target.
+httpserver_request_timeout_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 httpserver_request_timeout_test
+.PHONY : httpserver_request_timeout_test
+
+# fast build rule for target.
+httpserver_request_timeout_test/fast:
+	$(MAKE) $(MAKESILENT) -f HttpServer/test/CMakeFiles/httpserver_request_timeout_test.dir/build.make HttpServer/test/CMakeFiles/httpserver_request_timeout_test.dir/build
+.PHONY : httpserver_request_timeout_test/fast
+
+#=============================================================================
+# Target rules for targets named httpserver_timeout_connection_test
+
+# Build rule for target.
+httpserver_timeout_connection_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 httpserver_timeout_connection_test
+.PHONY : httpserver_timeout_connection_test
+
+# fast build rule for target.
+httpserver_timeout_connection_test/fast:
+	$(MAKE) $(MAKESILENT) -f HttpServer/test/CMakeFiles/httpserver_timeout_connection_test.dir/build.make HttpServer/test/CMakeFiles/httpserver_timeout_connection_test.dir/build
+.PHONY : httpserver_timeout_connection_test/fast
+
+#=============================================================================
+# Target rules for targets named httpserver_run_cpp
+
+# Build rule for target.
+httpserver_run_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 httpserver_run_cpp
+.PHONY : httpserver_run_cpp
+
+# fast build rule for target.
+httpserver_run_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f HttpServer/test/CMakeFiles/httpserver_run_cpp.dir/build.make HttpServer/test/CMakeFiles/httpserver_run_cpp.dir/build
+.PHONY : httpserver_run_cpp/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -210,8 +366,20 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... httpserver_run_cpp"
 	@echo "... CTS_shared"
 	@echo "... CTS_static"
+	@echo "... Logger_shared"
+	@echo "... Logger_static"
+	@echo "... httpserver_bad_request_test"
+	@echo "... httpserver_business_timeout_test"
+	@echo "... httpserver_large_file_test"
+	@echo "... httpserver_long_connection_test"
+	@echo "... httpserver_parallel_requests_test"
+	@echo "... httpserver_pressure_test"
+	@echo "... httpserver_request_timeout_test"
+	@echo "... httpserver_test_server"
+	@echo "... httpserver_timeout_connection_test"
 .PHONY : help
 
 

@@ -202,9 +202,7 @@ void Connection::BindChannelCallbacksInLoop()
 void Connection::ShutDownInLoop()
 {
     _status = Disconnecting;
-    if(_in_buffer.Size())
-        _message_cb(shared_from_this(),_in_buffer);
-    if(_out_buffer.Size() && !_channel.IsWriteAble())
+    if(_out_buffer.Size())
         _channel.EnableWrite();
     else
         Release();

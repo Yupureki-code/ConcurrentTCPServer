@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DLogger_shared_EXPORTS
 
-CXX_INCLUDES = -I/home/yupureki/project/ConcurrentTCPServer/CTS/include -I/home/yupureki/project/ConcurrentTCPServer/Logger/include
+CXX_INCLUDES = -I/home/yupureki/project/ConcurrentTCPServer/CTS/include -I/home/yupureki/project/ConcurrentTCPServer/Logger -I/home/yupureki/project/ConcurrentTCPServer/Logger/include -I/home/yupureki/project/ConcurrentTCPServer/Logger/output/include
 
 CXX_FLAGS = -std=gnu++17 -fPIC
 

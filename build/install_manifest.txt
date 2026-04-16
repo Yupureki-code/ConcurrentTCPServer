@@ -1,3 +1,13 @@
+/usr/local/lib/libLogger.a
+/usr/local/lib/libLogger.so.1.0.0
+/usr/local/lib/libLogger.so.1
+/usr/local/lib/libLogger.so
+/usr/local/include/Logger/logstrategy.h
+/usr/local/include/Logger/logstrategy.hpp
+/usr/local/lib/cmake/Logger/LoggerTargets.cmake
+/usr/local/lib/cmake/Logger/LoggerTargets-noconfig.cmake
+/usr/local/lib/cmake/Logger/LoggerConfig.cmake
+/usr/local/lib/cmake/Logger/LoggerConfigVersion.cmake
 /usr/local/lib/libCTS.a
 /usr/local/lib/libCTS.so.1.0.0
 /usr/local/lib/libCTS.so.1
@@ -26,3 +36,7 @@
 /usr/local/include/CTS/eventloop.h
 /usr/local/include/CTS/lock.hpp
 /usr/local/include/CTS/acceptor.hpp
+/usr/local/lib/cmake/CTS/CTSTargets.cmake
+/usr/local/lib/cmake/CTS/CTSTargets-noconfig.cmake
+/usr/local/lib/cmake/CTS/CTSConfig.cmake
+/usr/local/lib/cmake/CTS/CTSConfigVersion.cmake

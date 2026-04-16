@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/yupureki/project/ConcurrentTCPServer/EchoServer/output/lib/libEchoServer.a CMakeFiles/EchoServer_static.dir/src/EchoServer.cpp.o
+/usr/bin/ranlib /home/yupureki/project/ConcurrentTCPServer/EchoServer/output/lib/libEchoServer.a

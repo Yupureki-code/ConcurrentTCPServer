@@ -73,7 +73,10 @@ bool TimeWheel::AddTimeTaskInLoop(size_t id,size_t timeout,TimeOutCallBack cb)
         return true;
     }
     if(timeout > _capacity)
+    {
+        logger(ns_log::WARNING) << "time task timeout exceeds wheel capacity: id=" << id << " timeout=" << timeout << " capacity=" << _capacity;
         return false;
+    }
     SharedTimeTask stt = std::make_shared<TimeTask>(id,timeout,cb,std::bind(RemoveWeakTask,this,id));
     _timewheel[(_tick + timeout) % _capacity].push(stt);
     WeakTimeTask wtt = stt;

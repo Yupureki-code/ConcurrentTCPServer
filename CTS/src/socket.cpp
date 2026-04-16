@@ -41,6 +41,18 @@ void TcpSocket::create_socket()
     int flag = fcntl(_sockfd, F_GETFL);
     fcntl(_sockfd, F_SETFL, flag | O_NONBLOCK);
 
+    int reuse = 1;
+    if(setsockopt(_sockfd, SOL_SOCKET, SO_REUSEADDR, &reuse, sizeof(reuse)) < 0)
+    {
+        logger(LogLevel::WARNING) << "set SO_REUSEADDR failed: " << strerror(errno);
+    }
+#ifdef SO_REUSEPORT
+    if(setsockopt(_sockfd, SOL_SOCKET, SO_REUSEPORT, &reuse, sizeof(reuse)) < 0)
+    {
+        logger(LogLevel::WARNING) << "set SO_REUSEPORT failed: " << strerror(errno);
+    }
+#endif
+
     logger(LogLevel::INFO) << "sockect create success : " << _sockfd;
 }
 

@@ -1,7 +1,7 @@
 #include "../include/EchoServer.hpp"
-#include "../include/ConcurrentTCPServer.hpp"
-#include "../include/connection.h"
-#include "../include/buffer.hpp"
+#include <CTS/CTS.h>
+#include <CTS/connection.h>
+#include <CTS/buffer.h>
 #include <iostream>
 #include <memory>
 
@@ -38,7 +38,7 @@ public:
     }
 
 private:
-    ConcurrentTCPServer _server;
+    CTS _server;
 };
 
 EchoServer::EchoServer(uint16_t port, size_t thread_nums)

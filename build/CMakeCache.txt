@@ -14,6 +14,15 @@
 # EXTERNAL cache entries
 ########################
 
+//Build EchoServer
+BUILD_ECHOSERVER:BOOL=OFF
+
+//Build HttpServer tests
+BUILD_HTTPSERVER_TESTS:BOOL=ON
+
+//Build legacy CMake tests
+BUILD_LEGACY_TESTS:BOOL=OFF
+
 //Build tests
 BUILD_TESTING:BOOL=ON
 
@@ -201,6 +210,15 @@ ConcurrentTCPServer_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 ConcurrentTCPServer_SOURCE_DIR:STATIC=/home/yupureki/project/ConcurrentTCPServer
 
+//Value Computed by CMake
+EchoServer_BINARY_DIR:STATIC=/home/yupureki/project/ConcurrentTCPServer/build/EchoServer
+
+//Value Computed by CMake
+EchoServer_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+EchoServer_SOURCE_DIR:STATIC=/home/yupureki/project/ConcurrentTCPServer/EchoServer
+
 
 ########################
 # INTERNAL cache entries
@@ -290,7 +308,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

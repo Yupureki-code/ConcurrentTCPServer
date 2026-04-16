@@ -226,11 +226,9 @@ CTS/CMakeFiles/CTS_shared.dir/src/channel.cpp.o: \
  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/c++/13/cstring \
  /usr/include/string.h /usr/include/strings.h \
- /home/yupureki/project/ConcurrentTCPServer/Logger/logstrategy.h \
- /home/yupureki/project/ConcurrentTCPServer/Logger/include/logstrategy.h \
- /usr/include/c++/13/ctime /usr/include/c++/13/fstream \
- /usr/include/c++/13/istream /usr/include/c++/13/ios \
- /usr/include/c++/13/bits/ios_base.h \
+ /usr/local/include/Logger/logstrategy.h /usr/include/c++/13/ctime \
+ /usr/include/c++/13/fstream /usr/include/c++/13/istream \
+ /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
  /usr/include/c++/13/bits/locale_classes.h \
  /usr/include/c++/13/bits/locale_classes.tcc \
  /usr/include/c++/13/system_error \
