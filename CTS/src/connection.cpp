@@ -58,9 +58,8 @@ void Connection::Update(Context context,ConnectedCallBack connect_cb,MessageCall
 
 void Connection::HandlerRead()
 {
-    std::string in;
-    int n = _socket->NonBlockRecv(in);
-    logger(ns_log::DEBUG) << "received:" << in << ", count:" << n;
+    // 零拷贝recv：直接读入预分配的buffer
+    int n = _socket->NonBlockRecv(_recv_buf, RECV_BUF_SIZE - 1);
     if(n == 0)
         return;
     if(n == -1)
@@ -73,12 +72,14 @@ void Connection::HandlerRead()
         Release();
         return;
     }
-    _in_buffer.Write(in);
+    // 直接写入Buffer，避免string构造
+    _in_buffer.Write(_recv_buf, n);
     if(_in_buffer.Size())
         _message_cb(shared_from_this(),_in_buffer);
 }
 void Connection::HandlerWrite()
 {
+    // 使用原有的string方式（更稳定）
     std::string out = _out_buffer.Read();
     if(out.empty())
     {

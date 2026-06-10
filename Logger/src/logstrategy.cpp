@@ -2,6 +2,7 @@
 
 #include <cstdio>
 #include <cstdlib>
+#include <iostream>
 
 namespace ns_log
 {
@@ -48,6 +49,8 @@ namespace ns_log
 
     void ConsoleLogStrategy::synclog(const std::string message)
     {
+        if(message.empty())
+            return;
         std::lock_guard<std::mutex> guard(_mutex);
         std::cout << message << std::endl;
     }
@@ -67,6 +70,8 @@ namespace ns_log
 
     void FileLogStrategy::synclog(const std::string message)
     {
+        if(message.empty())
+            return;
         std::lock_guard<std::mutex> guard(_mutex);
         std::ofstream fout(_file.c_str(), std::ios::app);
         if (!fout.is_open())
@@ -110,7 +115,7 @@ namespace ns_log
         _enabled_levels[level] = false;
     }
     bool Logger::IsLogLevelEnabled(LogLevel level)
-    {        
+    {
         return _enabled_levels[level];
     }
     Logger::LogMessage::LogMessage(const LogLevel type, const std::string filename, const int line, Logger& logger)

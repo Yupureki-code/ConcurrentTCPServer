@@ -45,6 +45,7 @@ private:
     void ShutDownInLoop();//在事件循环中关闭连接的函数
     void ReleaseInLoop();//在事件循环中释放连接的函数
     void SendInLoop(const std::string& info);//在事件循环中发送数据的函数
+    void SendInLoop(const char* data, size_t len);//在事件循环中发送数据的函数（零拷贝）
 public:
     Connection(uint64_t _id,EventLoop* loop,int fd,const InetAddr& peer);//构造函数，参数为连接ID、事件循环、文件描述符和对端地址
     void SetConnectedCallBack(ConnectedCallBack cb);//设置连接回调函数
@@ -82,4 +83,8 @@ private:
     EventCallBack _event_cb;//事件回调函数
     CloseCallBack _close_cb;//关闭回调函数
     CloseCallBack _close_server_cb;//服务器关闭回调函数
+    
+    // 预分配的recv缓冲区，避免每次recv都分配string
+    static constexpr size_t RECV_BUF_SIZE = 65536;  // 64KB
+    char _recv_buf[RECV_BUF_SIZE];
 };

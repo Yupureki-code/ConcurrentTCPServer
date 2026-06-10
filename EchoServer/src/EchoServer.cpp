@@ -2,7 +2,6 @@
 #include <CTS/CTS.h>
 #include <CTS/connection.h>
 #include <CTS/buffer.h>
-#include <iostream>
 #include <memory>
 
 class EchoServer::Impl
@@ -12,20 +11,17 @@ public:
         : _server(port, thread_nums)
     {
         _server.SetMessageCallBack([this](const auto& conn, Buffer& buf) {
-            std::string data = buf.GetLine();
-            if (!data.empty())
-            {
-                std::cout << "EchoServer received: " << data << std::endl;
-                conn->Send("Echo: " + data + "\n");
+            while (buf.Size() > 0) {
+                std::string data = buf.GetLine("\n");
+                if (data.empty()) break;
+                conn->Send(data + "\n");
             }
         });
 
         _server.SetConnectedCallBack([](const auto& conn) {
-            std::cout << "Client connected: " << conn->GetId() << std::endl;
         });
 
         _server.SetCloseCallBack([](const auto& conn) {
-            std::cout << "Client disconnected: " << conn->GetId() << std::endl;
         });
 
         _server.EnableInactiveRelease(60);
@@ -33,7 +29,6 @@ public:
 
     void Start()
     {
-        std::cout << "EchoServer starting on port..." << std::endl;
         _server.Run();
     }
 

@@ -14,8 +14,11 @@ public:
     virtual bool Connect(const std::string&, const uint16_t&) = 0;
     virtual int Recv(std::string&, int) = 0;
     virtual int NonBlockRecv(std::string&) = 0;
+    virtual int Recv(char* buf, size_t len, int flag = 0) = 0;  // 零拷贝recv
+    virtual int NonBlockRecv(char* buf, size_t len) = 0;         // 零拷贝非阻塞recv
     virtual int Send(const std::string&, int) = 0;
     virtual int NonBlockSend(const std::string&) = 0;
+    virtual int NonBlockSend(const char* data, size_t len) = 0;  // 零拷贝send
     virtual int get_sockfd() = 0;
     virtual void set_sockfd(int) = 0;
     virtual void Close() = 0;
@@ -37,8 +40,11 @@ public:
     bool Connect(const std::string& ip, const uint16_t& port) override;
     int Recv(std::string& out, int flag = 0) override;
     int NonBlockRecv(std::string& out) override;
+    int Recv(char* buf, size_t len, int flag = 0) override;
+    int NonBlockRecv(char* buf, size_t len) override;
     int Send(const std::string& out, int flag = 0) override;
     int NonBlockSend(const std::string& out) override;
+    int NonBlockSend(const char* data, size_t len) override;
     int get_sockfd() override;
     void set_sockfd(int fd) override;
     void Close() override;

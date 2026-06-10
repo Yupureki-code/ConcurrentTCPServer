@@ -78,6 +78,8 @@ namespace ns_log
             template<class T>
             LogMessage &operator<<(const T& str)
             {
+                if(!_logger.IsLogLevelEnabled(_type))
+                    return *this;
                 std::stringstream ss;
                 ss << str;
                 _loginfo += ss.str();
@@ -102,5 +104,9 @@ namespace ns_log
         static Logger _inst;
     };
 
-    #define logger(level) ns_log::Logger::GetInstance()(level, __LINE__, __FILE__)
+    #ifdef CTS_LOGGING_DISABLED
+        #define logger(level) if(false) ns_log::Logger::GetInstance()(level, __LINE__, __FILE__)
+    #else
+        #define logger(level) ns_log::Logger::GetInstance()(level, __LINE__, __FILE__)
+    #endif
 }

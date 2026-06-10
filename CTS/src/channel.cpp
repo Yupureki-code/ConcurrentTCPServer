@@ -25,17 +25,45 @@ void Channel::Tie(const std::shared_ptr<void>& ptr)
 }
 bool Channel::IsReadAble(){ return _events & EPOLLIN; }
 bool Channel::IsWriteAble(){ return _events & EPOLLOUT; }
-void Channel::EnableRead(){ _events |= EPOLLIN; Add(); }
-void Channel::EnableWrite(){ _events |= EPOLLOUT; Add(); }
-void Channel::UnableRead(){ _events &= ~EPOLLIN; Add(); }
-void Channel::UnableWrite(){ _events &= ~EPOLLOUT; Add(); }
+
+void Channel::EnableRead(){
+    if (!(_events & EPOLLIN)) {
+        _events |= EPOLLIN;
+        Add();
+    }
+}
+
+void Channel::EnableWrite(){
+    if (!(_events & EPOLLOUT)) {
+        _events |= EPOLLOUT;
+        Add();
+    }
+}
+
+void Channel::UnableRead(){
+    if (_events & EPOLLIN) {
+        _events &= ~EPOLLIN;
+        Add();
+    }
+}
+
+void Channel::UnableWrite(){
+    if (_events & EPOLLOUT) {
+        _events &= ~EPOLLOUT;
+        Add();
+    }
+}
 
 void Channel::HandlerEvent()
 {
     if(_is_tied)
     {
-        std::shared_ptr<void> guard = _tie.lock();
-        if(guard)
+        // 缓存guard，避免每次lock
+        if(!_guard_cached) {
+            _cached_guard = _tie.lock();
+            _guard_cached = true;
+        }
+        if(_cached_guard)
             HandlerEventWithGuard();
         return;
     }
@@ -48,13 +76,11 @@ void Channel::HandlerEventWithGuard()
     {
         if(_revents & EPOLLERR)
         {
-            logger(ns_log::DEBUG)<<"处理EPOLLERR"<<",fd:"<<std::to_string(_fd);;
             if(_event)_event();
             if(_error)_error();
         }
         if(_revents & EPOLLHUP)
         {
-            logger(ns_log::DEBUG)<<"处理EPOLLHUP"<<",fd:"<<std::to_string(_fd);;
             if(_event)_event();
             if(_close)_close();
         }
@@ -62,19 +88,11 @@ void Channel::HandlerEventWithGuard()
     }
     if((_revents & EPOLLIN) || (_revents & EPOLLRDHUP) || (_revents & EPOLLPRI))
     {
-        if(_revents & EPOLLIN)
-            //logger(ns_log::DEBUG)<<"处理EPOLLIN"<<",fd:"<<std::to_string(_fd);;
-        if(_revents & EPOLLRDHUP)
-            logger(ns_log::DEBUG)<<"处理EPOLLRDHUP"<<",fd:"<<std::to_string(_fd);;
-        if(_revents & EPOLLPRI)
-            logger(ns_log::DEBUG)<<"处理EPOLLPRI"<<",fd:"<<std::to_string(_fd);;
         if(_event)_event();
         if(_read)_read();
     }
     if(_revents & EPOLLOUT)
     {
-        logger(ns_log::DEBUG)<<"处理EPOLLOUT"<<",fd:"<<std::to_string(_fd);;
-        logger(ns_log::DEBUG)<<",fd:"<<std::to_string(_fd);
         if(_event)_event();
         if(_write)_write();
     }

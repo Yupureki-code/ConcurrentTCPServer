@@ -146,6 +146,28 @@ int TcpSocket::NonBlockSend(const std::string& out)
     return Send(out, MSG_DONTWAIT);
 }
 
+int TcpSocket::NonBlockSend(const char* data, size_t len)
+{
+    return send(_sockfd, data, len, MSG_DONTWAIT);
+}
+
+int TcpSocket::Recv(char* buf, size_t len, int flag)
+{
+    return recv(_sockfd, buf, len, flag);
+}
+
+int TcpSocket::NonBlockRecv(char* buf, size_t len)
+{
+    int n = Recv(buf, len, MSG_DONTWAIT);
+    if (n > 0)
+        return n;
+    if (n == 0)
+        return -1;
+    if (errno == EAGAIN || errno == EWOULDBLOCK || errno == EINTR)
+        return 0;
+    return -2;
+}
+
 int TcpSocket::get_sockfd()
 {
     return _sockfd;

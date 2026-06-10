@@ -44,5 +44,7 @@ private:
     EventCallBack _error;//错误事件回调函数
     EventCallBack _close;//关闭事件回调函数
     std::weak_ptr<void> _tie;//绑定的shared_ptr，防止在事件处理过程中对象被销毁
+    std::shared_ptr<void> _cached_guard;//缓存的shared_ptr，避免每次lock
     bool _is_tied = false;//是否绑定了shared_ptr
+    bool _guard_cached = false;//是否已缓存guard
 };

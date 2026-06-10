@@ -124,9 +124,12 @@ public:
     {
         for(auto & it : handler)
         {
-            if(std::regex_match(req._path, it.first))
+            std::smatch matches;
+            if(std::regex_match(req._path, matches, it.first))
             {
-                return RunHandlerWithTimeout(it.second, req, rep);
+                HttpRequest mutable_req = req;
+                mutable_req._matches = matches;
+                return RunHandlerWithTimeout(it.second, mutable_req, rep);
             }
         }
         return false;

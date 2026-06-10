@@ -11,8 +11,13 @@ option(BUILD_TESTING "Build tests" ON)
 option(BUILD_ECHOSERVER "Build EchoServer" OFF)
 option(BUILD_LEGACY_TESTS "Build legacy CMake tests" OFF)
 option(BUILD_HTTPSERVER_TESTS "Build HttpServer tests" ON)
+option(CTS_TRACE_LOGGING "Enable CTS trace logging (slower)" OFF)
 
 include_directories(${CMAKE_SOURCE_DIR}/CTS/include)
+
+if(NOT CTS_TRACE_LOGGING)
+    add_definitions(-DCTS_LOGGING_DISABLED=1)
+endif()
 
 add_subdirectory(Logger)
 add_subdirectory(CTS)
